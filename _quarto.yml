@@ -28,12 +28,8 @@ website:
     background: primary
     search: true
   page-footer:
-    left: |
-      Licensed under {{< fa brands creative-commons >}} {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-sa >}} [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
     center: |
       Made with&nbsp;[Quarto](https://quarto.org/)
-    right: |
-      View the source at [{{< fa brands github >}} GitHub]({{< var github-repo >}})
     border: true
     background: dark
   site-url: "https://vergiel-a.com"
