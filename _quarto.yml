@@ -27,9 +27,6 @@ website:
         icon: envelope-fill
     background: primary
     search: true
-  page-footer:
-    center: |
-      Made with&nbsp;[Quarto](https://quarto.org/)
     border: true
     background: dark
   site-url: "https://vergiel-a.com"
