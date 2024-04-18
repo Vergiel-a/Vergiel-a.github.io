@@ -22,7 +22,7 @@ format:
     code-tools: false
 ---
 
-Atualmente sou Cientista de Dados, focado em dados econômicos, financeiros e contábeis. Gosto bastante de analisar dados e descobrir fatos.
+Sou Cientista de Dados, focado em dados econômicos, financeiros e contábeis. Gosto bastante de analisar dados e descobrir fatos.
 
 Graduei em Bacharelado Interdisciplinar em Ciência e Economia e Ciências Contábeis pela Universidade Federal de Alfenas. Me especializei nos uso das linguagens R e Python, e me dediquei em construir códigos voltados à métodos quantitativos aplicados em economia, finanças e negócios, com ênfase em análises de séries temporais, previsões e inferência causal.
 
