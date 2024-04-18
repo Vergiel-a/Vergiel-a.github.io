@@ -29,7 +29,7 @@ website:
     search: true
     border: true
     background: dark
-  site-url: "https://vergiel-a.com"
+  site-url: "https://vergiel-a.github.io/blog_vergiel/"
   repo-url: "https://github.com/Vergiel-a/Vergiel-a.github.io"
   favicon: "images/favl.png"
   open-graph: true
