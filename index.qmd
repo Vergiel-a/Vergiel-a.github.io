@@ -2,7 +2,7 @@
 title: "Luiz H. Barbosa F."
 pagetitle: "Luiz - Portfólio - Data Scientist"
 author: ""
-image: images/luiz.jpg
+image: /images/luiz.jpg
 about:
   template: trestles
   image-width: 12em
