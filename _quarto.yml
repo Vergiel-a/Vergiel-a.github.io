@@ -35,7 +35,7 @@ website:
   open-graph: true
 
 lang: pt
-freeze: true
+freeze: false
 
 format:
   html:
