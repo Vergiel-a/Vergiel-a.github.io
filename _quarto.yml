@@ -41,7 +41,6 @@ format:
     author: "Luiz Henrique"
     theme:
       - flatly
-    css: styles/css/styles.css
     toc: true
     mainfont: "Lato"
     monofont: "Fira Mono"
@@ -53,14 +52,12 @@ format:
     code-line-numbers: true
     code-link: true
     code-tools: true
-    code-block-bg: "#0d1117"
-    highlight-style: oblivion
+    highlight-style: github
     freeze: true
     fig-align: center
     fig-width: 8
     fig-height: 4
     fig-asp: 0.618
-    fig-dpi: 300
     fig-responsive: true
     link-external-newwindow: true
     footnotes-hover: true
