@@ -140,7 +140,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles/css/styles.css">
 <meta property="og:title" content="Luiz Henrique - Como construir uma Curva IS no Python?">
 <meta property="og:description" content="Construindo um modelo da Curva IS usando o Python">
-<meta property="og:image" content="https://vergiel-a.com/blog/2024-02-28-curva-is/imgs/curva-is.png">
+<meta property="og:image" content="https://vergiel-a.github.io/blog_vergiel/blog/2024-02-28-curva-is/imgs/curva-is.png">
 <meta property="og:site_name" content="Luiz Henrique">
 <meta property="og:image:height" content="1400">
 <meta property="og:image:width" content="2000">
@@ -280,7 +280,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <section id="como-estimamos-a-curva-is" class="level2">
 <h2 class="anchored" data-anchor-id="como-estimamos-a-curva-is">Como estimamos a curva IS?</h2>
 <p>A Curva IS é estimada com base na equação descrita no início usando 2SLS com matriz de covariância robusta para evitar problemas na inferência dos parâmetros causados por autocorrelação e heterocedasticidade nos resíduos. Há também a adição de duas dummies para levar em consideração a crise de 2008 e a pandemia de Covid.</p>
-<div id="509cae48" class="cell" data-execution_count="1">
+<div id="c2719102" class="cell" data-execution_count="1">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
@@ -301,7 +301,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </section>
 <section id="hiato-do-produto" class="level2">
 <h2 class="anchored" data-anchor-id="hiato-do-produto">2.1 Hiato do Produto</h2>
-<div id="9453c20e" class="cell" data-execution_count="2">
+<div id="b08d8a3e" class="cell" data-execution_count="2">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Coleta e tratamento do Hiato do Produto da IFI</span></span>
@@ -317,7 +317,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb2-11"><a href="#cb2-11"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="1f1c530c" class="cell" data-execution_count="3">
+<div id="d805720d" class="cell" data-execution_count="3">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>hiato</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -399,7 +399,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </div>
 </div>
 </div>
-<div id="d7d88a7c" class="cell" data-execution_count="4">
+<div id="a3d2d6a4" class="cell" data-execution_count="4">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Coleta e tratamento do Hiato do Produto do BC</span></span>
@@ -496,7 +496,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </section>
 <section id="resultado-estrutural-do-setor-público" class="level2">
 <h2 class="anchored" data-anchor-id="resultado-estrutural-do-setor-público">2.2 Resultado estrutural do setor público</h2>
-<div id="3fd0f987" class="cell" data-execution_count="5">
+<div id="6a80daf0" class="cell" data-execution_count="5">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Coleta e tratamento do resultado estrutural do setor público</span></span>
@@ -515,7 +515,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb5-14"><a href="#cb5-14"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="ffa7d976" class="cell" data-execution_count="6">
+<div id="30b6ce24" class="cell" data-execution_count="6">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>sup</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -600,7 +600,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </section>
 <section id="juro-real" class="level2">
 <h2 class="anchored" data-anchor-id="juro-real">2.3 Juro Real</h2>
-<div id="4a003a64" class="cell" data-execution_count="7">
+<div id="9ac0ec7c" class="cell" data-execution_count="7">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co"># Cria uma função para a equação de fisher</span></span>
@@ -626,7 +626,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb7-21"><a href="#cb7-21"></a>    <span class="cf">return</span> juros</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="b28d62bf" class="cell" data-execution_count="8">
+<div id="c76ac39a" class="cell" data-execution_count="8">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co"># Taxa referencial - swaps - DI pré-360 dias - média do período (IPEADATA/B3)</span></span>
@@ -709,7 +709,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </div>
 </div>
 </div>
-<div id="25cc677d" class="cell" data-execution_count="9">
+<div id="f2399b41" class="cell" data-execution_count="9">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Instância a classe de Expectativas</span></span>
@@ -728,7 +728,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb9-14"><a href="#cb9-14"></a>    )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="01b988a3" class="cell" data-execution_count="10">
+<div id="6b41f5b5" class="cell" data-execution_count="10">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="co"># Muda a classe da coluna de data para date time e period, renomeia as colunas e seleciona a coluna dos valores</span></span>
@@ -745,7 +745,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb10-12"><a href="#cb10-12"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="35e96b10" class="cell" data-execution_count="11">
+<div id="3a63c6ea" class="cell" data-execution_count="11">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>ipca_expec_12m</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -819,7 +819,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </div>
 </div>
 </div>
-<div id="e8f13fe1" class="cell" data-execution_count="12">
+<div id="da6ffd72" class="cell" data-execution_count="12">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a><span class="co"># Junta o df do swap e expectativas do ipca</span></span>
@@ -844,7 +844,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </section>
 <section id="proxy-juro-neutro" class="level2">
 <h2 class="anchored" data-anchor-id="proxy-juro-neutro">2.4 Proxy juro neutro</h2>
-<div id="5d728f23" class="cell" data-execution_count="13">
+<div id="2515febd" class="cell" data-execution_count="13">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># Cria função para calcular a data de referência a partir da data de observação</span></span>
@@ -871,7 +871,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb13-22"><a href="#cb13-22"></a>    <span class="cf">return</span> years</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="98c4217c" class="cell" data-execution_count="14">
+<div id="8575f884" class="cell" data-execution_count="14">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># Conecta com a API das Expectativas de Mercado Anuais</span></span>
@@ -887,7 +887,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb14-11"><a href="#cb14-11"></a>  )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="c3f68cb1" class="cell" data-execution_count="15">
+<div id="132815bf" class="cell" data-execution_count="15">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1"></a><span class="co"># Realiza o filtro para a data de referência 3 anos a frente das obs.</span></span>
@@ -902,7 +902,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb15-10"><a href="#cb15-10"></a>                                  <span class="st">'Mediana'</span> : <span class="st">'ipca_e'</span>}).drop([<span class="st">'DataReferencia'</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="e8e01bf3" class="cell" data-execution_count="16">
+<div id="acc3d8b4" class="cell" data-execution_count="16">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Importa as expectativas da Selic anuais e realiza os filtros</span></span>
@@ -926,7 +926,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb16-19"><a href="#cb16-19"></a>                                         <span class="st">'Mediana'</span> : <span class="st">'selic_e'</span>}).drop([<span class="st">'DataReferencia'</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="20e57a3a" class="cell" data-execution_count="17">
+<div id="ac33f571" class="cell" data-execution_count="17">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1"></a>selic_e_t3</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1008,7 +1008,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </div>
 </div>
 </div>
-<div id="51ec07fc" class="cell" data-execution_count="18">
+<div id="ba092552" class="cell" data-execution_count="18">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a><span class="co"># Junta os dados em um data frame</span></span>
@@ -1021,7 +1021,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb18-8"><a href="#cb18-8"></a>                )</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="b611beef" class="cell" data-execution_count="19">
+<div id="b6b75c65" class="cell" data-execution_count="19">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a><span class="co"># Trimestraliza o juro neutro</span></span>
@@ -1116,7 +1116,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </section>
 <section id="resultados" class="level1">
 <h1>Resultados</h1>
-<div id="c883dedb" class="cell" data-execution_count="20">
+<div id="8ab8346b" class="cell" data-execution_count="20">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a><span class="co"># lista de dataframes</span></span>
@@ -1126,7 +1126,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb20-5"><a href="#cb20-5"></a>dados_reg <span class="op">=</span> <span class="bu">reduce</span>(<span class="kw">lambda</span> left, right: pd.merge(left, right, on <span class="op">=</span> <span class="st">'date_quarter'</span>, how <span class="op">=</span> <span class="st">'left'</span>), dfs).dropna()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="5978496f" class="cell" data-execution_count="21">
+<div id="b4d4461a" class="cell" data-execution_count="21">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a>dados_reg</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1256,7 +1256,7 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 </div>
 </div>
 </div>
-<div id="fe3d832b" class="cell" data-execution_count="22">
+<div id="7df0b857" class="cell" data-execution_count="22">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a><span class="co"># Calcula as defasagens</span></span>
@@ -1286,14 +1286,14 @@ h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t
 <span id="cb22-25"><a href="#cb22-25"></a>dados_reg <span class="op">=</span> pd.concat([dados_reg, t_dummies], axis<span class="op">=</span><span class="dv">1</span>).dropna()</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="676ca04b" class="cell" data-execution_count="23">
+<div id="41f3548b" class="cell" data-execution_count="23">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a><span class="co"># Retira os dados faltantes</span></span>
 <span id="cb23-2"><a href="#cb23-2"></a>dados_reg.dropna(inplace <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="4c25d3fb" class="cell" data-execution_count="24">
+<div id="2e9b89ff" class="cell" data-execution_count="24">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1"></a><span class="co"># Estimando o modelo 2SLS usando a função IV2SLS.from_formula</span></span>
@@ -1310,7 +1310,7 @@ Dep. Variable:              hiato_bcb   R-squared:                      0.9563
 Estimator:                    IV-2SLS   Adj. R-squared:                 0.9530
 No. Observations:                  73   F-statistic:                    7598.6
 Date:                Thu, Apr 18 2024   P-value (F-stat)                0.0000
-Time:                        00:38:13   Distribution:                  chi2(5)
+Time:                        21:52:54   Distribution:                  chi2(5)
 Cov. Estimator:                kernel                                         
                                                                               
                                 Parameter Estimates                                 
@@ -1334,7 +1334,7 @@ Automatic Bandwidth: True
 Bandwidth: 3</code></pre>
 </div>
 </div>
-<div id="e59c3d50" class="cell" data-execution_count="25">
+<div id="a43b58c5" class="cell" data-execution_count="25">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1"></a><span class="co"># Cria df com o resultado</span></span>
@@ -1347,7 +1347,7 @@ Bandwidth: 3</code></pre>
 <span id="cb26-8"><a href="#cb26-8"></a>                          <span class="st">"Diff. Superávit"</span>: model.params.sup_diff_lag1 <span class="op">*</span> dados_reg.sup_diff_lag1})</span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
-<div id="fcb0ce55" class="cell" data-execution_count="26">
+<div id="2064b5ae" class="cell" data-execution_count="26">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1"></a><span class="co"># Altera para long</span></span>
@@ -1378,7 +1378,7 @@ Bandwidth: 3</code></pre>
 </div>
 </div>
 </div>
-<div id="2e1f828a" class="cell" data-execution_count="27">
+<div id="1a6f408e" class="cell" data-execution_count="27">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># Cria uma figura com 1 linha e 3 colunas para os três gráficos</span></span>
@@ -1413,7 +1413,7 @@ Bandwidth: 3</code></pre>
 </div>
 </div>
 </div>
-<div id="3f022614" class="cell" data-execution_count="28">
+<div id="75ed76f5" class="cell" data-execution_count="28">
 <details open="" class="code-fold">
 <summary>Código</summary>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1"></a>resultado_fit_plot_long <span class="op">=</span> resultado[[<span class="st">'Data'</span>, <span class="st">'Hiato Defasado'</span>, <span class="st">'Hiato do Juros Defasado'</span>, <span class="st">'Diff. Superávit'</span>, <span class="st">'Resíduo'</span>]].melt(id_vars <span class="op">=</span> [<span class="st">'Data'</span>])</span>
@@ -1582,7 +1582,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("^(?:http:|https:)\/\/(www\.)?vergiel-a\.com");
+      var filterRegex = new RegExp("https:\/\/vergiel-a\.github\.io\/blog_vergiel\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -1927,452 +1927,438 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb30-10"><a href="#cb30-10"></a><span class="co">  - /posts/macroeconometria/modelos/index.html</span></span>
 <span id="cb30-11"><a href="#cb30-11"></a><span class="co">---</span></span>
 <span id="cb30-12"><a href="#cb30-12"></a></span>
-<span id="cb30-13"><a href="#cb30-13"></a></span>
-<span id="cb30-14"><a href="#cb30-14"></a>O objetivo do exercício será estimar uma versão da Curva IS do Modelo Semiestrutural de Pequeno Porte do BCB descrito nesse <span class="co">[</span><span class="ot">Relatório</span><span class="co">](https://www.bcb.gov.br/htms/relinf/port/2017/06/ri201706b7p.pdf)</span>, conforme descrito abaixo:</span>
-<span id="cb30-15"><a href="#cb30-15"></a></span>
-<span id="cb30-16"><a href="#cb30-16"></a>\begin{align}</span>
-<span id="cb30-17"><a href="#cb30-17"></a>h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t-j} +\sum_{k &gt; 0} \beta_{3k} \Delta sup_{t-k} + u_t</span>
-<span id="cb30-18"><a href="#cb30-18"></a>\end{align}</span>
-<span id="cb30-19"><a href="#cb30-19"></a></span>
-<span id="cb30-20"><a href="#cb30-20"></a>Basicamente, a Curva IS estimada irá descrever a dinâmica do hiato do produto com base em **suas próprias defasagens**, da **taxa de juros real ex-ante** e da **variação do superávit primário**.</span>
-<span id="cb30-21"><a href="#cb30-21"></a></span>
-<span id="cb30-22"><a href="#cb30-22"></a><span class="fu">## Dados</span></span>
-<span id="cb30-23"><a href="#cb30-23"></a>O Hiato do produto é aquele construído pelo Banco Central, disponibilizado nos anexos estatísticos do Relatório de Inflação.</span>
-<span id="cb30-24"><a href="#cb30-24"></a></span>
-<span id="cb30-25"><a href="#cb30-25"></a>O hiato do juros é criado pela diferença entre o juros real ex-ante e o juro neutro, a taxa de juros real obtida pela taxa de juros nominal swap pré-DI de 360 dias deflacionada pela expectativa de inflação relativa ao período de vigência do contrato, o juro de equilíbrio segue uma&nbsp;proxy&nbsp;definida no Relatório de Inflação de dezembro de 2019, dada pela Selic esperada para t+3 deflacionada pela inflação espera para t+3.</span>
-<span id="cb30-26"><a href="#cb30-26"></a></span>
-<span id="cb30-27"><a href="#cb30-27"></a>A variação do superávit primário utilizada é aquela proveniente do resultado fiscal estrutural construído pela SPE.</span>
-<span id="cb30-28"><a href="#cb30-28"></a></span>
-<span id="cb30-29"><a href="#cb30-29"></a><span class="fu">## Como estimamos a curva IS?</span></span>
-<span id="cb30-30"><a href="#cb30-30"></a></span>
-<span id="cb30-31"><a href="#cb30-31"></a>A Curva IS é estimada com base na equação descrita no início usando 2SLS com matriz de covariância robusta para evitar problemas na inferência dos parâmetros causados por autocorrelação e heterocedasticidade nos resíduos. Há também a adição de duas dummies para levar em consideração a crise de 2008 e a pandemia de Covid.</span>
-<span id="cb30-32"><a href="#cb30-32"></a></span>
-<span id="cb30-35"><a href="#cb30-35"></a><span class="in">```{python}</span></span>
-<span id="cb30-36"><a href="#cb30-36"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
-<span id="cb30-37"><a href="#cb30-37"></a><span class="im">from</span> bcb <span class="im">import</span> sgs <span class="co"># Importar dados do SGS</span></span>
-<span id="cb30-38"><a href="#cb30-38"></a><span class="im">from</span> bcb <span class="im">import</span> Expectativas <span class="co"># Importar dados de Expectativas</span></span>
-<span id="cb30-39"><a href="#cb30-39"></a><span class="im">import</span> ipeadatapy <span class="im">as</span> ip <span class="co"># importa dados do IPEADATA</span></span>
-<span id="cb30-40"><a href="#cb30-40"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co"># Manipulação de dados</span></span>
-<span id="cb30-41"><a href="#cb30-41"></a><span class="im">import</span> numpy <span class="im">as</span> np <span class="co"># Manipulação e cálculo de dados</span></span>
-<span id="cb30-42"><a href="#cb30-42"></a><span class="im">from</span> functools <span class="im">import</span> <span class="bu">reduce</span> <span class="co"># módulo para juntar dfs</span></span>
-<span id="cb30-43"><a href="#cb30-43"></a><span class="im">from</span> datetime <span class="im">import</span> datetime <span class="co"># módulo para trabalhar com data</span></span>
-<span id="cb30-44"><a href="#cb30-44"></a><span class="im">from</span> linearmodels.iv <span class="im">import</span> IV2SLS <span class="co"># Modelo IV2SLS</span></span>
-<span id="cb30-45"><a href="#cb30-45"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
-<span id="cb30-46"><a href="#cb30-46"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb30-47"><a href="#cb30-47"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb30-48"><a href="#cb30-48"></a>sns.<span class="bu">set</span>()</span>
-<span id="cb30-49"><a href="#cb30-49"></a><span class="in">```</span></span>
-<span id="cb30-50"><a href="#cb30-50"></a></span>
-<span id="cb30-51"><a href="#cb30-51"></a><span class="fu">## 2.1 Hiato do Produto</span></span>
-<span id="cb30-52"><a href="#cb30-52"></a></span>
-<span id="cb30-55"><a href="#cb30-55"></a><span class="in">```{python}</span></span>
-<span id="cb30-56"><a href="#cb30-56"></a><span class="co"># Coleta e tratamento do Hiato do Produto da IFI</span></span>
-<span id="cb30-57"><a href="#cb30-57"></a>hiato <span class="op">=</span> (</span>
-<span id="cb30-58"><a href="#cb30-58"></a>    pd.read_excel(</span>
-<span id="cb30-59"><a href="#cb30-59"></a>    <span class="st">"https://www12.senado.leg.br/ifi/dados/arquivos/estimativas-do-hiato-do-produto-ifi/@@download/file/Hiato</span><span class="sc">%20d</span><span class="st">o%20Produto%20IFI.xlsx"</span>,</span>
-<span id="cb30-60"><a href="#cb30-60"></a>    sheet_name <span class="op">=</span> <span class="st">"Hiato do Produto"</span>,</span>
-<span id="cb30-61"><a href="#cb30-61"></a>    skiprows <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb30-62"><a href="#cb30-62"></a>    )</span>
-<span id="cb30-63"><a href="#cb30-63"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'Trim-Ano'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>),</span>
-<span id="cb30-64"><a href="#cb30-64"></a>            hiato_ifi <span class="op">=</span> <span class="kw">lambda</span> x: x.Hiato.astype(<span class="bu">float</span>) <span class="op">*</span> <span class="dv">100</span>)</span>
-<span id="cb30-65"><a href="#cb30-65"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'hiato_ifi'</span>]]</span>
-<span id="cb30-66"><a href="#cb30-66"></a>  )</span>
-<span id="cb30-67"><a href="#cb30-67"></a><span class="in">```</span></span>
-<span id="cb30-68"><a href="#cb30-68"></a></span>
-<span id="cb30-71"><a href="#cb30-71"></a><span class="in">```{python}</span></span>
-<span id="cb30-72"><a href="#cb30-72"></a>hiato</span>
-<span id="cb30-73"><a href="#cb30-73"></a><span class="in">```</span></span>
-<span id="cb30-74"><a href="#cb30-74"></a></span>
-<span id="cb30-77"><a href="#cb30-77"></a><span class="in">```{python}</span></span>
-<span id="cb30-78"><a href="#cb30-78"></a><span class="co"># Coleta e tratamento do Hiato do Produto do BC</span></span>
-<span id="cb30-79"><a href="#cb30-79"></a>hiato_bcb <span class="op">=</span> (</span>
-<span id="cb30-80"><a href="#cb30-80"></a>    pd.read_excel(</span>
-<span id="cb30-81"><a href="#cb30-81"></a>    <span class="st">"https://www.bcb.gov.br/content/ri/relatorioinflacao/202403/ri202403anp.xlsx"</span>,</span>
-<span id="cb30-82"><a href="#cb30-82"></a>    sheet_name <span class="op">=</span> <span class="st">"Graf 2.2.4"</span>,</span>
-<span id="cb30-83"><a href="#cb30-83"></a>    skiprows <span class="op">=</span> <span class="dv">8</span></span>
-<span id="cb30-84"><a href="#cb30-84"></a>    )</span>
-<span id="cb30-85"><a href="#cb30-85"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'Trimestre'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>),</span>
-<span id="cb30-86"><a href="#cb30-86"></a>            hiato_bcb <span class="op">=</span> <span class="kw">lambda</span> x: x.Hiato.astype(<span class="bu">float</span>))</span>
-<span id="cb30-87"><a href="#cb30-87"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'hiato_bcb'</span>]]</span>
-<span id="cb30-88"><a href="#cb30-88"></a>  )</span>
-<span id="cb30-89"><a href="#cb30-89"></a></span>
-<span id="cb30-90"><a href="#cb30-90"></a>hiato_bcb</span>
-<span id="cb30-91"><a href="#cb30-91"></a><span class="in">```</span></span>
-<span id="cb30-92"><a href="#cb30-92"></a></span>
-<span id="cb30-93"><a href="#cb30-93"></a><span class="fu">## 2.2 Resultado estrutural do setor público</span></span>
-<span id="cb30-94"><a href="#cb30-94"></a></span>
-<span id="cb30-97"><a href="#cb30-97"></a><span class="in">```{python}</span></span>
-<span id="cb30-98"><a href="#cb30-98"></a><span class="co"># Coleta e tratamento do resultado estrutural do setor público</span></span>
-<span id="cb30-99"><a href="#cb30-99"></a>sup <span class="op">=</span> (</span>
-<span id="cb30-100"><a href="#cb30-100"></a>     pd.read_excel(</span>
-<span id="cb30-101"><a href="#cb30-101"></a>    <span class="st">"https://www.gov.br/fazenda/pt-br/assuntos/politica-fiscal/atuacao-spe/resultado-fiscal-estrutural/tabelas-de-dados/series-historicas-rfe-2023-2022-versao-final.xlsx"</span>,</span>
-<span id="cb30-102"><a href="#cb30-102"></a>    sheet_name <span class="op">=</span> <span class="st">"RFE - Trimestral"</span>,</span>
-<span id="cb30-103"><a href="#cb30-103"></a>    skiprows <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb30-104"><a href="#cb30-104"></a>    )</span>
-<span id="cb30-105"><a href="#cb30-105"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(</span>
-<span id="cb30-106"><a href="#cb30-106"></a>            x[<span class="st">'Acum. 4 Trimestres'</span>].<span class="bu">str</span>.slice_replace(start <span class="op">=</span> <span class="dv">4</span>, stop <span class="op">=</span> <span class="dv">5</span>, repl <span class="op">=</span> <span class="st">"-Q"</span>),  freq <span class="op">=</span> <span class="st">'Q'</span></span>
-<span id="cb30-107"><a href="#cb30-107"></a>            ),</span>
-<span id="cb30-108"><a href="#cb30-108"></a>          sup <span class="op">=</span> <span class="kw">lambda</span> x: (((x[<span class="st">'Resultado Estrutural.2'</span>].astype(<span class="bu">float</span>) <span class="op">+</span> <span class="dv">1</span>) <span class="op">**</span> (<span class="dv">1</span><span class="op">/</span><span class="dv">4</span>)) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb30-109"><a href="#cb30-109"></a>    )</span>
-<span id="cb30-110"><a href="#cb30-110"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'sup'</span>]]</span>
-<span id="cb30-111"><a href="#cb30-111"></a>  )</span>
-<span id="cb30-112"><a href="#cb30-112"></a><span class="in">```</span></span>
-<span id="cb30-113"><a href="#cb30-113"></a></span>
-<span id="cb30-116"><a href="#cb30-116"></a><span class="in">```{python}</span></span>
-<span id="cb30-117"><a href="#cb30-117"></a>sup</span>
-<span id="cb30-118"><a href="#cb30-118"></a><span class="in">```</span></span>
-<span id="cb30-119"><a href="#cb30-119"></a></span>
-<span id="cb30-120"><a href="#cb30-120"></a><span class="fu">## 2.3 Juro Real</span></span>
-<span id="cb30-121"><a href="#cb30-121"></a></span>
-<span id="cb30-124"><a href="#cb30-124"></a><span class="in">```{python}</span></span>
-<span id="cb30-125"><a href="#cb30-125"></a><span class="co"># Cria uma função para a equação de fisher</span></span>
-<span id="cb30-126"><a href="#cb30-126"></a><span class="kw">def</span> fisher(juros, inflacao):</span>
-<span id="cb30-127"><a href="#cb30-127"></a>    <span class="co">"""</span></span>
-<span id="cb30-128"><a href="#cb30-128"></a><span class="co">    Calcula a taxa de juros real neutra usando a equação de Fisher.</span></span>
-<span id="cb30-129"><a href="#cb30-129"></a></span>
-<span id="cb30-130"><a href="#cb30-130"></a><span class="co">    Args:</span></span>
-<span id="cb30-131"><a href="#cb30-131"></a><span class="co">        juros (float): A taxa de juros nominal em porcentagem (%).</span></span>
-<span id="cb30-132"><a href="#cb30-132"></a><span class="co">        inflacao (float): A taxa de inflação em porcentagem (%).</span></span>
-<span id="cb30-133"><a href="#cb30-133"></a></span>
-<span id="cb30-134"><a href="#cb30-134"></a><span class="co">    Returns:</span></span>
-<span id="cb30-135"><a href="#cb30-135"></a><span class="co">        float: A taxa de juros real em porcentagem (%).</span></span>
-<span id="cb30-136"><a href="#cb30-136"></a></span>
-<span id="cb30-137"><a href="#cb30-137"></a><span class="co">    Raises:</span></span>
-<span id="cb30-138"><a href="#cb30-138"></a><span class="co">        TypeError: Se os argumentos `juros` e `inflacao` não forem do tipo `float`.</span></span>
-<span id="cb30-139"><a href="#cb30-139"></a></span>
-<span id="cb30-140"><a href="#cb30-140"></a><span class="co">    Exemplo:</span></span>
-<span id="cb30-141"><a href="#cb30-141"></a><span class="co">        &gt;&gt;&gt; fisher(10, 3)</span></span>
-<span id="cb30-142"><a href="#cb30-142"></a><span class="co">        6.796116504854364</span></span>
-<span id="cb30-143"><a href="#cb30-143"></a><span class="co">    """</span></span>
-<span id="cb30-144"><a href="#cb30-144"></a>    juros <span class="op">=</span> ((((<span class="dv">1</span> <span class="op">+</span> (juros <span class="op">/</span> <span class="dv">100</span>)) <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> inflacao <span class="op">/</span> <span class="dv">100</span>))) <span class="op">-</span><span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span></span>
-<span id="cb30-145"><a href="#cb30-145"></a>    <span class="cf">return</span> juros</span>
-<span id="cb30-146"><a href="#cb30-146"></a><span class="in">```</span></span>
-<span id="cb30-147"><a href="#cb30-147"></a></span>
-<span id="cb30-150"><a href="#cb30-150"></a><span class="in">```{python}</span></span>
-<span id="cb30-151"><a href="#cb30-151"></a><span class="co"># Taxa referencial - swaps - DI pré-360 dias - média do período (IPEADATA/B3)</span></span>
-<span id="cb30-152"><a href="#cb30-152"></a>swaps <span class="op">=</span> (</span>
-<span id="cb30-153"><a href="#cb30-153"></a>    ip.timeseries(<span class="st">'BMF12_SWAPDI36012'</span>)</span>
-<span id="cb30-154"><a href="#cb30-154"></a>    .rename(columns <span class="op">=</span> {<span class="st">'VALUE ((% a.a.))'</span> : <span class="st">'swaps'</span>})[[<span class="st">'swaps'</span>]]</span>
-<span id="cb30-155"><a href="#cb30-155"></a>  )</span>
-<span id="cb30-156"><a href="#cb30-156"></a></span>
-<span id="cb30-157"><a href="#cb30-157"></a><span class="co"># Muda a coluna de data para o índice</span></span>
-<span id="cb30-158"><a href="#cb30-158"></a>swaps <span class="op">=</span> swaps.set_index(swaps.index.to_period(<span class="st">'M'</span>))</span>
-<span id="cb30-159"><a href="#cb30-159"></a></span>
-<span id="cb30-160"><a href="#cb30-160"></a>swaps</span>
-<span id="cb30-161"><a href="#cb30-161"></a><span class="in">```</span></span>
-<span id="cb30-162"><a href="#cb30-162"></a></span>
-<span id="cb30-165"><a href="#cb30-165"></a><span class="in">```{python}</span></span>
-<span id="cb30-166"><a href="#cb30-166"></a><span class="co"># Instância a classe de Expectativas</span></span>
-<span id="cb30-167"><a href="#cb30-167"></a>em <span class="op">=</span> Expectativas()</span>
-<span id="cb30-168"><a href="#cb30-168"></a></span>
-<span id="cb30-169"><a href="#cb30-169"></a><span class="co"># Obtém o endpoint da Expectativa de Inflação Acumulada em 12 meses</span></span>
-<span id="cb30-170"><a href="#cb30-170"></a>exp_ipca_raw <span class="op">=</span> em.get_endpoint(<span class="st">'ExpectativasMercadoInflacao12Meses'</span>)</span>
-<span id="cb30-171"><a href="#cb30-171"></a></span>
-<span id="cb30-172"><a href="#cb30-172"></a><span class="co"># Expectativa média do IPCA - tx. acumulada para os próximos 12 meses (Expectativas)</span></span>
-<span id="cb30-173"><a href="#cb30-173"></a>ipca_expec_12m_raw <span class="op">=</span> (</span>
-<span id="cb30-174"><a href="#cb30-174"></a>    exp_ipca_raw.query()</span>
-<span id="cb30-175"><a href="#cb30-175"></a>    .<span class="bu">filter</span>(exp_ipca_raw.Suavizada <span class="op">==</span> <span class="st">'S'</span>,</span>
-<span id="cb30-176"><a href="#cb30-176"></a>            exp_ipca_raw.baseCalculo <span class="op">==</span> <span class="dv">0</span>,</span>
-<span id="cb30-177"><a href="#cb30-177"></a>            exp_ipca_raw.Indicador <span class="op">==</span> <span class="st">'IPCA'</span>)</span>
-<span id="cb30-178"><a href="#cb30-178"></a>    .collect()</span>
-<span id="cb30-179"><a href="#cb30-179"></a>    )</span>
-<span id="cb30-180"><a href="#cb30-180"></a><span class="in">```</span></span>
-<span id="cb30-181"><a href="#cb30-181"></a></span>
-<span id="cb30-184"><a href="#cb30-184"></a><span class="in">```{python}</span></span>
-<span id="cb30-185"><a href="#cb30-185"></a><span class="co"># Muda a classe da coluna de data para date time e period, renomeia as colunas e seleciona a coluna dos valores</span></span>
-<span id="cb30-186"><a href="#cb30-186"></a>ipca_expec_12m <span class="op">=</span> (</span>
-<span id="cb30-187"><a href="#cb30-187"></a>    ipca_expec_12m_raw</span>
-<span id="cb30-188"><a href="#cb30-188"></a>    <span class="co"># altera o tipo da coluna de data para datetime</span></span>
-<span id="cb30-189"><a href="#cb30-189"></a>    .set_index(pd.to_datetime(ipca_expec_12m_raw[<span class="st">'Data'</span>])</span>
-<span id="cb30-190"><a href="#cb30-190"></a>    <span class="co"># altera o tipo da coluna para period</span></span>
-<span id="cb30-191"><a href="#cb30-191"></a>    .dt.to_period(<span class="st">'D'</span>))</span>
-<span id="cb30-192"><a href="#cb30-192"></a>    .resample(<span class="st">'M'</span>)</span>
-<span id="cb30-193"><a href="#cb30-193"></a>    .agg({<span class="st">'Mediana'</span>:<span class="st">'mean'</span>})</span>
-<span id="cb30-194"><a href="#cb30-194"></a>    .rename(columns <span class="op">=</span> {<span class="st">'Mediana'</span> : <span class="st">'ipca_exp_12m'</span>})</span>
-<span id="cb30-195"><a href="#cb30-195"></a>    .loc[:, [<span class="st">'ipca_exp_12m'</span>]]</span>
-<span id="cb30-196"><a href="#cb30-196"></a>  )</span>
-<span id="cb30-197"><a href="#cb30-197"></a><span class="in">```</span></span>
-<span id="cb30-198"><a href="#cb30-198"></a></span>
-<span id="cb30-201"><a href="#cb30-201"></a><span class="in">```{python}</span></span>
-<span id="cb30-202"><a href="#cb30-202"></a>ipca_expec_12m</span>
-<span id="cb30-203"><a href="#cb30-203"></a><span class="in">```</span></span>
-<span id="cb30-204"><a href="#cb30-204"></a></span>
-<span id="cb30-207"><a href="#cb30-207"></a><span class="in">```{python}</span></span>
-<span id="cb30-208"><a href="#cb30-208"></a><span class="co"># Junta o df do swap e expectativas do ipca</span></span>
-<span id="cb30-209"><a href="#cb30-209"></a>ex_ante <span class="op">=</span> ipca_expec_12m.join(swaps)</span>
-<span id="cb30-210"><a href="#cb30-210"></a></span>
-<span id="cb30-211"><a href="#cb30-211"></a><span class="co"># Calcula o juro real ex-ante</span></span>
-<span id="cb30-212"><a href="#cb30-212"></a>ex_ante <span class="op">=</span> ex_ante.assign(juro_real <span class="op">=</span> <span class="kw">lambda</span> x: fisher(x.swaps, x.ipca_exp_12m))</span>
-<span id="cb30-213"><a href="#cb30-213"></a></span>
-<span id="cb30-214"><a href="#cb30-214"></a><span class="co"># Trimestraliza o juro real</span></span>
-<span id="cb30-215"><a href="#cb30-215"></a>juro_real <span class="op">=</span>  (</span>
-<span id="cb30-216"><a href="#cb30-216"></a>     ex_ante</span>
-<span id="cb30-217"><a href="#cb30-217"></a>    .assign(date <span class="op">=</span> <span class="kw">lambda</span> x: x.index.to_timestamp(),</span>
-<span id="cb30-218"><a href="#cb30-218"></a>            date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'date'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
-<span id="cb30-219"><a href="#cb30-219"></a>    .reset_index()</span>
-<span id="cb30-220"><a href="#cb30-220"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'juro_real'</span>]]</span>
-<span id="cb30-221"><a href="#cb30-221"></a>    .groupby(by <span class="op">=</span> <span class="st">'date_quarter'</span>)</span>
-<span id="cb30-222"><a href="#cb30-222"></a>    .agg(juro_real_ex_ante <span class="op">=</span> (<span class="st">'juro_real'</span>, <span class="st">'mean'</span>))</span>
-<span id="cb30-223"><a href="#cb30-223"></a>    .reset_index()</span>
-<span id="cb30-224"><a href="#cb30-224"></a>    )</span>
-<span id="cb30-225"><a href="#cb30-225"></a><span class="in">```</span></span>
-<span id="cb30-226"><a href="#cb30-226"></a></span>
-<span id="cb30-227"><a href="#cb30-227"></a><span class="fu">## 2.4 Proxy juro neutro</span></span>
-<span id="cb30-228"><a href="#cb30-228"></a></span>
-<span id="cb30-231"><a href="#cb30-231"></a><span class="in">```{python}</span></span>
-<span id="cb30-232"><a href="#cb30-232"></a><span class="co"># Cria função para calcular a data de referência a partir da data de observação</span></span>
-<span id="cb30-233"><a href="#cb30-233"></a><span class="kw">def</span> reference_date(date: <span class="bu">str</span>):</span>
-<span id="cb30-234"><a href="#cb30-234"></a>    <span class="co">"""</span></span>
-<span id="cb30-235"><a href="#cb30-235"></a><span class="co">    Calcula a data de referência adicionando 3 anos a uma data de observação.</span></span>
-<span id="cb30-236"><a href="#cb30-236"></a></span>
-<span id="cb30-237"><a href="#cb30-237"></a><span class="co">    Args:</span></span>
-<span id="cb30-238"><a href="#cb30-238"></a><span class="co">        date (str): Uma string que representa uma data no formato 'YYYY-MM-DD'.</span></span>
-<span id="cb30-239"><a href="#cb30-239"></a></span>
-<span id="cb30-240"><a href="#cb30-240"></a><span class="co">    Returns:</span></span>
-<span id="cb30-241"><a href="#cb30-241"></a><span class="co">        List[str]: Uma lista de strings com a data de referência no formato 'YYYY'.</span></span>
-<span id="cb30-242"><a href="#cb30-242"></a></span>
-<span id="cb30-243"><a href="#cb30-243"></a><span class="co">    Raises:</span></span>
-<span id="cb30-244"><a href="#cb30-244"></a><span class="co">        TypeError: Se o argumento `date` não for uma string.</span></span>
-<span id="cb30-245"><a href="#cb30-245"></a></span>
-<span id="cb30-246"><a href="#cb30-246"></a><span class="co">    Examples:</span></span>
-<span id="cb30-247"><a href="#cb30-247"></a><span class="co">        &gt;&gt;&gt; reference_date('2022-01-01')</span></span>
-<span id="cb30-248"><a href="#cb30-248"></a><span class="co">        ['2025']</span></span>
-<span id="cb30-249"><a href="#cb30-249"></a><span class="co">    """</span></span>
-<span id="cb30-250"><a href="#cb30-250"></a>    years <span class="op">=</span> pd.DatetimeIndex(date).year.values <span class="op">+</span> <span class="dv">3</span> <span class="co"># Calcula 3 anos a frente</span></span>
-<span id="cb30-251"><a href="#cb30-251"></a>    years <span class="op">=</span> years.tolist()</span>
-<span id="cb30-252"><a href="#cb30-252"></a>    years <span class="op">=</span> [<span class="bu">str</span>(i) <span class="cf">for</span> i <span class="kw">in</span> years]</span>
-<span id="cb30-253"><a href="#cb30-253"></a>    <span class="cf">return</span> years</span>
-<span id="cb30-254"><a href="#cb30-254"></a><span class="in">```</span></span>
-<span id="cb30-255"><a href="#cb30-255"></a></span>
-<span id="cb30-258"><a href="#cb30-258"></a><span class="in">```{python}</span></span>
-<span id="cb30-259"><a href="#cb30-259"></a><span class="co"># Conecta com a API das Expectativas de Mercado Anuais</span></span>
-<span id="cb30-260"><a href="#cb30-260"></a>exp_anual <span class="op">=</span> em.get_endpoint(<span class="st">'ExpectativasMercadoAnuais'</span>)</span>
-<span id="cb30-261"><a href="#cb30-261"></a></span>
-<span id="cb30-262"><a href="#cb30-262"></a><span class="co"># Importa as expectativas do IPCA anuais e realiza os filtros</span></span>
-<span id="cb30-263"><a href="#cb30-263"></a>ipca_e_t3_raw <span class="op">=</span> (</span>
-<span id="cb30-264"><a href="#cb30-264"></a>  exp_anual.query()</span>
-<span id="cb30-265"><a href="#cb30-265"></a>  .<span class="bu">filter</span>(exp_anual.Indicador <span class="op">==</span> <span class="st">"IPCA"</span>)</span>
-<span id="cb30-266"><a href="#cb30-266"></a>  .<span class="bu">filter</span>(exp_anual.baseCalculo <span class="op">==</span> <span class="dv">0</span>)</span>
-<span id="cb30-267"><a href="#cb30-267"></a>  .select(exp_anual.Data, exp_anual.Mediana, exp_anual.DataReferencia)</span>
-<span id="cb30-268"><a href="#cb30-268"></a>  .collect()</span>
-<span id="cb30-269"><a href="#cb30-269"></a>  )</span>
-<span id="cb30-270"><a href="#cb30-270"></a><span class="in">```</span></span>
-<span id="cb30-271"><a href="#cb30-271"></a></span>
-<span id="cb30-274"><a href="#cb30-274"></a><span class="in">```{python}</span></span>
-<span id="cb30-275"><a href="#cb30-275"></a><span class="co"># Realiza o filtro para a data de referência 3 anos a frente das obs.</span></span>
-<span id="cb30-276"><a href="#cb30-276"></a>ipca_e_t3 <span class="op">=</span> ipca_e_t3_raw[(</span>
-<span id="cb30-277"><a href="#cb30-277"></a>          ipca_e_t3_raw</span>
-<span id="cb30-278"><a href="#cb30-278"></a>          .DataReferencia <span class="op">==</span> reference_date(ipca_e_t3_raw[<span class="st">'Data'</span>])</span>
-<span id="cb30-279"><a href="#cb30-279"></a>          )</span>
-<span id="cb30-280"><a href="#cb30-280"></a>            ]</span>
-<span id="cb30-281"><a href="#cb30-281"></a></span>
-<span id="cb30-282"><a href="#cb30-282"></a><span class="co"># Renomeia as colunas</span></span>
-<span id="cb30-283"><a href="#cb30-283"></a>ipca_e_t3 <span class="op">=</span> ipca_e_t3.rename(columns <span class="op">=</span> {<span class="st">'Data'</span> : <span class="st">'date'</span>,</span>
-<span id="cb30-284"><a href="#cb30-284"></a>                                  <span class="st">'Mediana'</span> : <span class="st">'ipca_e'</span>}).drop([<span class="st">'DataReferencia'</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span>
-<span id="cb30-285"><a href="#cb30-285"></a><span class="in">```</span></span>
-<span id="cb30-286"><a href="#cb30-286"></a></span>
-<span id="cb30-289"><a href="#cb30-289"></a><span class="in">```{python}</span></span>
-<span id="cb30-290"><a href="#cb30-290"></a><span class="co"># Importa as expectativas da Selic anuais e realiza os filtros</span></span>
-<span id="cb30-291"><a href="#cb30-291"></a>selic_e_t3_raw <span class="op">=</span> (</span>
-<span id="cb30-292"><a href="#cb30-292"></a>   exp_anual.query()</span>
-<span id="cb30-293"><a href="#cb30-293"></a>  .<span class="bu">filter</span>(exp_anual.Indicador <span class="op">==</span> <span class="st">"Selic"</span>)</span>
-<span id="cb30-294"><a href="#cb30-294"></a>  .<span class="bu">filter</span>(exp_anual.baseCalculo <span class="op">==</span> <span class="dv">0</span>)</span>
-<span id="cb30-295"><a href="#cb30-295"></a>  .select(exp_anual.Data, exp_anual.Mediana, exp_anual.DataReferencia)</span>
-<span id="cb30-296"><a href="#cb30-296"></a>  .collect()</span>
-<span id="cb30-297"><a href="#cb30-297"></a>  )</span>
-<span id="cb30-298"><a href="#cb30-298"></a></span>
-<span id="cb30-299"><a href="#cb30-299"></a><span class="co"># Realiza o filtro para a data de referência 3 anos a frente das obs.</span></span>
-<span id="cb30-300"><a href="#cb30-300"></a>selic_e_t3 <span class="op">=</span> selic_e_t3_raw[(</span>
-<span id="cb30-301"><a href="#cb30-301"></a>    selic_e_t3_raw</span>
-<span id="cb30-302"><a href="#cb30-302"></a>    .DataReferencia <span class="op">==</span> reference_date(selic_e_t3_raw[<span class="st">'Data'</span>])</span>
-<span id="cb30-303"><a href="#cb30-303"></a>    )</span>
-<span id="cb30-304"><a href="#cb30-304"></a>      ]</span>
-<span id="cb30-305"><a href="#cb30-305"></a></span>
-<span id="cb30-306"><a href="#cb30-306"></a><span class="co"># Renomeia as colunas</span></span>
-<span id="cb30-307"><a href="#cb30-307"></a>selic_e_t3 <span class="op">=</span> selic_e_t3.rename(columns <span class="op">=</span> {<span class="st">'Data'</span> : <span class="st">'date'</span>,</span>
-<span id="cb30-308"><a href="#cb30-308"></a>                                         <span class="st">'Mediana'</span> : <span class="st">'selic_e'</span>}).drop([<span class="st">'DataReferencia'</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span>
-<span id="cb30-309"><a href="#cb30-309"></a><span class="in">```</span></span>
-<span id="cb30-310"><a href="#cb30-310"></a></span>
-<span id="cb30-313"><a href="#cb30-313"></a><span class="in">```{python}</span></span>
-<span id="cb30-314"><a href="#cb30-314"></a>selic_e_t3</span>
-<span id="cb30-315"><a href="#cb30-315"></a><span class="in">```</span></span>
-<span id="cb30-316"><a href="#cb30-316"></a></span>
-<span id="cb30-319"><a href="#cb30-319"></a><span class="in">```{python}</span></span>
-<span id="cb30-320"><a href="#cb30-320"></a><span class="co"># Junta os dados em um data frame</span></span>
-<span id="cb30-321"><a href="#cb30-321"></a>proxy_neutro_m <span class="op">=</span> (</span>
-<span id="cb30-322"><a href="#cb30-322"></a>                pd.merge(left <span class="op">=</span> ipca_e_t3,</span>
-<span id="cb30-323"><a href="#cb30-323"></a>                        right <span class="op">=</span> selic_e_t3,</span>
-<span id="cb30-324"><a href="#cb30-324"></a>                        how <span class="op">=</span> <span class="st">'inner'</span>,</span>
-<span id="cb30-325"><a href="#cb30-325"></a>                        on <span class="op">=</span> <span class="st">'date'</span>)</span>
-<span id="cb30-326"><a href="#cb30-326"></a>                .assign(neutro <span class="op">=</span> <span class="kw">lambda</span> x : fisher(x.selic_e, x.ipca_e))</span>
-<span id="cb30-327"><a href="#cb30-327"></a>                )</span>
-<span id="cb30-328"><a href="#cb30-328"></a><span class="in">```</span></span>
-<span id="cb30-329"><a href="#cb30-329"></a></span>
-<span id="cb30-332"><a href="#cb30-332"></a><span class="in">```{python}</span></span>
-<span id="cb30-333"><a href="#cb30-333"></a><span class="co"># Trimestraliza o juro neutro</span></span>
-<span id="cb30-334"><a href="#cb30-334"></a>proxy_neutro <span class="op">=</span> (</span>
-<span id="cb30-335"><a href="#cb30-335"></a>    proxy_neutro_m</span>
-<span id="cb30-336"><a href="#cb30-336"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'date'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
-<span id="cb30-337"><a href="#cb30-337"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'neutro'</span>]]</span>
-<span id="cb30-338"><a href="#cb30-338"></a>    .groupby(by <span class="op">=</span> <span class="st">'date_quarter'</span>)</span>
-<span id="cb30-339"><a href="#cb30-339"></a>    .agg(neutro <span class="op">=</span> (<span class="st">'neutro'</span>, <span class="st">'mean'</span>))</span>
-<span id="cb30-340"><a href="#cb30-340"></a>    .reset_index()</span>
-<span id="cb30-341"><a href="#cb30-341"></a>)</span>
-<span id="cb30-342"><a href="#cb30-342"></a></span>
-<span id="cb30-343"><a href="#cb30-343"></a>proxy_neutro</span>
-<span id="cb30-344"><a href="#cb30-344"></a><span class="in">```</span></span>
-<span id="cb30-345"><a href="#cb30-345"></a></span>
-<span id="cb30-346"><a href="#cb30-346"></a><span class="fu"># Resultados</span></span>
-<span id="cb30-347"><a href="#cb30-347"></a></span>
-<span id="cb30-350"><a href="#cb30-350"></a><span class="in">```{python}</span></span>
-<span id="cb30-351"><a href="#cb30-351"></a><span class="co"># lista de dataframes</span></span>
-<span id="cb30-352"><a href="#cb30-352"></a>dfs <span class="op">=</span> [hiato, hiato_bcb, sup, juro_real, proxy_neutro]</span>
-<span id="cb30-353"><a href="#cb30-353"></a></span>
-<span id="cb30-354"><a href="#cb30-354"></a><span class="co"># reduz os dataframes pela chave 'date_quarter' com left join</span></span>
-<span id="cb30-355"><a href="#cb30-355"></a>dados_reg <span class="op">=</span> <span class="bu">reduce</span>(<span class="kw">lambda</span> left, right: pd.merge(left, right, on <span class="op">=</span> <span class="st">'date_quarter'</span>, how <span class="op">=</span> <span class="st">'left'</span>), dfs).dropna()</span>
-<span id="cb30-356"><a href="#cb30-356"></a><span class="in">```</span></span>
-<span id="cb30-357"><a href="#cb30-357"></a></span>
-<span id="cb30-360"><a href="#cb30-360"></a><span class="in">```{python}</span></span>
-<span id="cb30-361"><a href="#cb30-361"></a>dados_reg</span>
-<span id="cb30-362"><a href="#cb30-362"></a><span class="in">```</span></span>
-<span id="cb30-363"><a href="#cb30-363"></a></span>
-<span id="cb30-366"><a href="#cb30-366"></a><span class="in">```{python}</span></span>
-<span id="cb30-367"><a href="#cb30-367"></a><span class="co"># Calcula as defasagens</span></span>
-<span id="cb30-368"><a href="#cb30-368"></a>dados_reg[<span class="st">'hiato_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">1</span>)</span>
-<span id="cb30-369"><a href="#cb30-369"></a>dados_reg[<span class="st">'hiato_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">2</span>)</span>
-<span id="cb30-370"><a href="#cb30-370"></a>dados_reg[<span class="st">'sup_diff'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup'</span>].diff()</span>
-<span id="cb30-371"><a href="#cb30-371"></a>dados_reg[<span class="st">'sup_diff_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup_diff'</span>].shift(<span class="dv">1</span>)</span>
-<span id="cb30-372"><a href="#cb30-372"></a>dados_reg[<span class="st">'sup_diff_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup_diff'</span>].shift(<span class="dv">2</span>)</span>
-<span id="cb30-373"><a href="#cb30-373"></a>dados_reg[<span class="st">'sup_diff_lag3'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup_diff'</span>].shift(<span class="dv">3</span>)</span>
-<span id="cb30-374"><a href="#cb30-374"></a>dados_reg[<span class="st">'juro_real_ex_ante_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'juro_real_ex_ante'</span>].shift(<span class="dv">1</span>)</span>
-<span id="cb30-375"><a href="#cb30-375"></a>dados_reg[<span class="st">'juro_real_ex_ante_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'juro_real_ex_ante'</span>].shift(<span class="dv">2</span>)</span>
-<span id="cb30-376"><a href="#cb30-376"></a>dados_reg[<span class="st">'neutro_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'neutro'</span>].shift(<span class="dv">1</span>)</span>
-<span id="cb30-377"><a href="#cb30-377"></a>dados_reg[<span class="st">'neutro_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'neutro'</span>].shift(<span class="dv">2</span>)</span>
-<span id="cb30-378"><a href="#cb30-378"></a>dados_reg[<span class="st">'hiato_juros'</span>] <span class="op">=</span> dados_reg.juro_real_ex_ante <span class="op">-</span> dados_reg.neutro</span>
-<span id="cb30-379"><a href="#cb30-379"></a>dados_reg[<span class="st">'hiato_juros_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_juros'</span>].shift(<span class="dv">1</span>)</span>
-<span id="cb30-380"><a href="#cb30-380"></a>dados_reg[<span class="st">'hiato_juros_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_juros'</span>].shift(<span class="dv">2</span>)</span>
-<span id="cb30-381"><a href="#cb30-381"></a>dados_reg[<span class="st">'hiato_lag3'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">3</span>)</span>
-<span id="cb30-382"><a href="#cb30-382"></a>dados_reg[<span class="st">'hiato_lag4'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">4</span>)</span>
-<span id="cb30-383"><a href="#cb30-383"></a>dados_reg[<span class="st">'sup_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup'</span>].shift(<span class="dv">1</span>)</span>
-<span id="cb30-384"><a href="#cb30-384"></a></span>
-<span id="cb30-385"><a href="#cb30-385"></a><span class="co"># Criar variáveis dummy trimestrais usando pd.get_dummies</span></span>
-<span id="cb30-386"><a href="#cb30-386"></a>t_dummies <span class="op">=</span> pd.get_dummies(dados_reg[<span class="st">'date_quarter'</span>].dt.quarter, prefix <span class="op">=</span> <span class="st">'trimestre'</span>, dtype <span class="op">=</span> <span class="bu">int</span>)</span>
-<span id="cb30-387"><a href="#cb30-387"></a>dados_reg[<span class="st">'d_subprime'</span>] <span class="op">=</span> dados_reg[<span class="st">'date_quarter'</span>].isin(pd.PeriodIndex([<span class="st">'2008Q4'</span>, <span class="st">"2009Q1"</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
-<span id="cb30-388"><a href="#cb30-388"></a>dados_reg[<span class="st">'d_covid'</span>] <span class="op">=</span> dados_reg[<span class="st">'date_quarter'</span>].isin(pd.PeriodIndex([<span class="st">'2020Q2'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
-<span id="cb30-389"><a href="#cb30-389"></a></span>
-<span id="cb30-390"><a href="#cb30-390"></a><span class="co"># Concatenar as variáveis dummy com o DataFrame original</span></span>
-<span id="cb30-391"><a href="#cb30-391"></a>dados_reg <span class="op">=</span> pd.concat([dados_reg, t_dummies], axis<span class="op">=</span><span class="dv">1</span>).dropna()</span>
-<span id="cb30-392"><a href="#cb30-392"></a><span class="in">```</span></span>
-<span id="cb30-393"><a href="#cb30-393"></a></span>
-<span id="cb30-396"><a href="#cb30-396"></a><span class="in">```{python}</span></span>
-<span id="cb30-397"><a href="#cb30-397"></a><span class="co"># Retira os dados faltantes</span></span>
-<span id="cb30-398"><a href="#cb30-398"></a>dados_reg.dropna(inplace <span class="op">=</span> <span class="va">True</span>)</span>
-<span id="cb30-399"><a href="#cb30-399"></a><span class="in">```</span></span>
-<span id="cb30-400"><a href="#cb30-400"></a></span>
-<span id="cb30-403"><a href="#cb30-403"></a><span class="in">```{python}</span></span>
-<span id="cb30-404"><a href="#cb30-404"></a><span class="co"># Estimando o modelo 2SLS usando a função IV2SLS.from_formula</span></span>
-<span id="cb30-405"><a href="#cb30-405"></a>model <span class="op">=</span> IV2SLS.from_formula(<span class="st">'hiato_bcb ~ 1 + d_subprime + d_covid + [hiato_lag1 + hiato_juros_lag1 + sup_diff_lag1 ~ hiato_lag1 + juro_real_ex_ante_lag1 + neutro_lag2 + sup_diff_lag1]'</span>,</span>
-<span id="cb30-406"><a href="#cb30-406"></a>                            data <span class="op">=</span> dados_reg).fit(cov_type<span class="op">=</span><span class="st">'kernel'</span>)</span>
-<span id="cb30-407"><a href="#cb30-407"></a></span>
-<span id="cb30-408"><a href="#cb30-408"></a><span class="co"># Imprimindo o sumário do modelo</span></span>
-<span id="cb30-409"><a href="#cb30-409"></a><span class="bu">print</span>(model.summary)</span>
-<span id="cb30-410"><a href="#cb30-410"></a><span class="in">```</span></span>
-<span id="cb30-411"><a href="#cb30-411"></a></span>
-<span id="cb30-414"><a href="#cb30-414"></a><span class="in">```{python}</span></span>
-<span id="cb30-415"><a href="#cb30-415"></a><span class="co"># Cria df com o resultado</span></span>
-<span id="cb30-416"><a href="#cb30-416"></a>resultado <span class="op">=</span> pd.DataFrame({<span class="st">'Ajuste'</span> : model.fitted_values.fitted_values,</span>
-<span id="cb30-417"><a href="#cb30-417"></a>                          <span class="st">'Resíduo'</span> : model.resids,</span>
-<span id="cb30-418"><a href="#cb30-418"></a>                          <span class="st">'Hiato'</span> : dados_reg.hiato_bcb.values,</span>
-<span id="cb30-419"><a href="#cb30-419"></a>                          <span class="st">'Data'</span> : dados_reg.date_quarter.dt.to_timestamp(),</span>
-<span id="cb30-420"><a href="#cb30-420"></a>                          <span class="st">"Hiato Defasado"</span>: model.params.hiato_lag1 <span class="op">*</span> dados_reg.hiato_lag1,</span>
-<span id="cb30-421"><a href="#cb30-421"></a>                          <span class="st">"Hiato do Juros Defasado"</span>: model.params.hiato_juros_lag1 <span class="op">*</span> dados_reg.hiato_juros_lag1,</span>
-<span id="cb30-422"><a href="#cb30-422"></a>                          <span class="st">"Diff. Superávit"</span>: model.params.sup_diff_lag1 <span class="op">*</span> dados_reg.sup_diff_lag1})</span>
-<span id="cb30-423"><a href="#cb30-423"></a><span class="in">```</span></span>
-<span id="cb30-424"><a href="#cb30-424"></a></span>
-<span id="cb30-427"><a href="#cb30-427"></a><span class="in">```{python}</span></span>
-<span id="cb30-428"><a href="#cb30-428"></a><span class="co"># Altera para long</span></span>
-<span id="cb30-429"><a href="#cb30-429"></a>resultado_fit_long <span class="op">=</span> resultado[[<span class="st">'Data'</span>, <span class="st">'Ajuste'</span>, <span class="st">'Hiato'</span>]].melt(id_vars <span class="op">=</span> [<span class="st">'Data'</span>])</span>
-<span id="cb30-430"><a href="#cb30-430"></a></span>
-<span id="cb30-431"><a href="#cb30-431"></a><span class="co"># Criação do gráfico</span></span>
-<span id="cb30-432"><a href="#cb30-432"></a>(</span>
-<span id="cb30-433"><a href="#cb30-433"></a>  ggplot(resultado_fit_long, aes(x <span class="op">=</span> <span class="st">'Data'</span>, y <span class="op">=</span> <span class="st">'value'</span>, color <span class="op">=</span> <span class="st">'variable'</span>)) <span class="op">+</span></span>
-<span id="cb30-434"><a href="#cb30-434"></a>  geom_line(size <span class="op">=</span>  <span class="dv">1</span>) <span class="op">+</span></span>
-<span id="cb30-435"><a href="#cb30-435"></a>  theme_minimal() <span class="op">+</span></span>
-<span id="cb30-436"><a href="#cb30-436"></a>  scale_color_manual(values <span class="op">=</span> [<span class="st">'#b22200'</span>, <span class="st">'#282f6b'</span>]) <span class="op">+</span></span>
-<span id="cb30-437"><a href="#cb30-437"></a>  scale_x_datetime(date_breaks <span class="op">=</span> <span class="st">'2 years'</span>, date_labels <span class="op">=</span> <span class="st">"%Y"</span>) <span class="op">+</span></span>
-<span id="cb30-438"><a href="#cb30-438"></a>  labs(</span>
-<span id="cb30-439"><a href="#cb30-439"></a>    title <span class="op">=</span> <span class="st">'Ajuste da Curva IS estimada x Hiato do Produto (BCB)'</span>,</span>
-<span id="cb30-440"><a href="#cb30-440"></a>    x <span class="op">=</span> <span class="st">''</span>,</span>
-<span id="cb30-441"><a href="#cb30-441"></a>    y <span class="op">=</span> <span class="st">''</span>,</span>
-<span id="cb30-442"><a href="#cb30-442"></a>    color <span class="op">=</span> <span class="st">""</span>,</span>
-<span id="cb30-443"><a href="#cb30-443"></a>    caption <span class="op">=</span> <span class="st">'Elaborado por analisemacro.com.br | Fonte: BCB'</span>)<span class="op">+</span></span>
-<span id="cb30-444"><a href="#cb30-444"></a>  theme(legend_position <span class="op">=</span> <span class="st">'bottom'</span>,</span>
-<span id="cb30-445"><a href="#cb30-445"></a>        figure_size <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">7</span>))</span>
-<span id="cb30-446"><a href="#cb30-446"></a>  )</span>
-<span id="cb30-447"><a href="#cb30-447"></a><span class="in">```</span></span>
-<span id="cb30-448"><a href="#cb30-448"></a></span>
-<span id="cb30-451"><a href="#cb30-451"></a><span class="in">```{python}</span></span>
-<span id="cb30-452"><a href="#cb30-452"></a><span class="co"># Cria uma figura com 1 linha e 3 colunas para os três gráficos</span></span>
-<span id="cb30-453"><a href="#cb30-453"></a>fig, axes <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">1</span>, ncols<span class="op">=</span><span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">4</span>))</span>
-<span id="cb30-454"><a href="#cb30-454"></a></span>
-<span id="cb30-455"><a href="#cb30-455"></a><span class="co"># Gráfico de Linha do Resíduo</span></span>
-<span id="cb30-456"><a href="#cb30-456"></a>axes[<span class="dv">0</span>].plot(resultado.Resíduo)</span>
-<span id="cb30-457"><a href="#cb30-457"></a>axes[<span class="dv">0</span>].set_title(<span class="st">'Gráfico de Linha do Resíduo'</span>)</span>
-<span id="cb30-458"><a href="#cb30-458"></a>axes[<span class="dv">0</span>].set_xlabel(<span class="st">'Tempo'</span>)</span>
-<span id="cb30-459"><a href="#cb30-459"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">'Resíduo'</span>)</span>
-<span id="cb30-460"><a href="#cb30-460"></a></span>
-<span id="cb30-461"><a href="#cb30-461"></a><span class="co"># Gráfico de Autocorrelação (ACF)</span></span>
-<span id="cb30-462"><a href="#cb30-462"></a>sm.graphics.tsa.plot_acf(resultado.Resíduo, lags<span class="op">=</span><span class="dv">40</span>, ax<span class="op">=</span>axes[<span class="dv">1</span>], zero <span class="op">=</span> <span class="va">False</span>)</span>
-<span id="cb30-463"><a href="#cb30-463"></a>axes[<span class="dv">1</span>].set_title(<span class="st">'Gráfico de Autocorrelação (ACF) dos Resíduos'</span>)</span>
-<span id="cb30-464"><a href="#cb30-464"></a>axes[<span class="dv">1</span>].set_xlabel(<span class="st">'Lags'</span>)</span>
-<span id="cb30-465"><a href="#cb30-465"></a>axes[<span class="dv">1</span>].set_ylabel(<span class="st">'Autocorrelação'</span>)</span>
-<span id="cb30-466"><a href="#cb30-466"></a></span>
-<span id="cb30-467"><a href="#cb30-467"></a><span class="co"># Gráfico de Histograma</span></span>
-<span id="cb30-468"><a href="#cb30-468"></a>axes[<span class="dv">2</span>].hist(resultado.Resíduo, bins<span class="op">=</span><span class="dv">20</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>)</span>
-<span id="cb30-469"><a href="#cb30-469"></a>axes[<span class="dv">2</span>].set_title(<span class="st">'Histograma dos Resíduos'</span>)</span>
-<span id="cb30-470"><a href="#cb30-470"></a>axes[<span class="dv">2</span>].set_xlabel(<span class="st">'Resíduo'</span>)</span>
-<span id="cb30-471"><a href="#cb30-471"></a>axes[<span class="dv">2</span>].set_ylabel(<span class="st">'Frequência'</span>)</span>
-<span id="cb30-472"><a href="#cb30-472"></a></span>
-<span id="cb30-473"><a href="#cb30-473"></a>plt.tight_layout()  <span class="co"># Para garantir que os gráficos não se sobreponham</span></span>
-<span id="cb30-474"><a href="#cb30-474"></a>plt.show()</span>
-<span id="cb30-475"><a href="#cb30-475"></a><span class="in">```</span></span>
-<span id="cb30-476"><a href="#cb30-476"></a></span>
-<span id="cb30-479"><a href="#cb30-479"></a><span class="in">```{python}</span></span>
-<span id="cb30-480"><a href="#cb30-480"></a>resultado_fit_plot_long <span class="op">=</span> resultado[[<span class="st">'Data'</span>, <span class="st">'Hiato Defasado'</span>, <span class="st">'Hiato do Juros Defasado'</span>, <span class="st">'Diff. Superávit'</span>, <span class="st">'Resíduo'</span>]].melt(id_vars <span class="op">=</span> [<span class="st">'Data'</span>])</span>
-<span id="cb30-481"><a href="#cb30-481"></a></span>
-<span id="cb30-482"><a href="#cb30-482"></a>(</span>
-<span id="cb30-483"><a href="#cb30-483"></a> ggplot(resultado_fit_plot_long, aes(x <span class="op">=</span> <span class="st">'Data'</span>, y <span class="op">=</span> <span class="st">'value'</span>, fill <span class="op">=</span> <span class="st">'variable'</span>))<span class="op">+</span></span>
-<span id="cb30-484"><a href="#cb30-484"></a> geom_col() <span class="op">+</span></span>
-<span id="cb30-485"><a href="#cb30-485"></a> geom_hline(yintercept <span class="op">=</span> <span class="dv">0</span>, colour <span class="op">=</span> <span class="st">'black'</span>) <span class="op">+</span></span>
-<span id="cb30-486"><a href="#cb30-486"></a> theme_minimal() <span class="op">+</span></span>
-<span id="cb30-487"><a href="#cb30-487"></a> scale_fill_manual(values <span class="op">=</span> [<span class="st">'black'</span>, <span class="st">'#224f20'</span>, <span class="st">'#b22200'</span>, <span class="st">'#eace3f'</span>]) <span class="op">+</span></span>
-<span id="cb30-488"><a href="#cb30-488"></a> scale_x_datetime(date_breaks <span class="op">=</span> <span class="st">'2 years'</span>, date_labels <span class="op">=</span> <span class="st">"%Y"</span>) <span class="op">+</span></span>
-<span id="cb30-489"><a href="#cb30-489"></a> labs(</span>
-<span id="cb30-490"><a href="#cb30-490"></a>    title <span class="op">=</span> <span class="st">'Contribuição para o Hiato do Produto'</span>,</span>
-<span id="cb30-491"><a href="#cb30-491"></a>    x <span class="op">=</span> <span class="st">''</span>,</span>
-<span id="cb30-492"><a href="#cb30-492"></a>    y <span class="op">=</span> <span class="st">'p.p.'</span>,</span>
-<span id="cb30-493"><a href="#cb30-493"></a>    fill <span class="op">=</span> <span class="st">""</span>,</span>
-<span id="cb30-494"><a href="#cb30-494"></a>    caption <span class="op">=</span> <span class="st">'Elaborado por analisemacro.com.br | Fonte: BCB'</span>)<span class="op">+</span></span>
-<span id="cb30-495"><a href="#cb30-495"></a>  theme(legend_position <span class="op">=</span> <span class="st">'top'</span>,</span>
-<span id="cb30-496"><a href="#cb30-496"></a>        figure_size <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">7</span>))</span>
-<span id="cb30-497"><a href="#cb30-497"></a>)</span>
-<span id="cb30-498"><a href="#cb30-498"></a><span class="in">```</span></span>
+<span id="cb30-13"><a href="#cb30-13"></a>O objetivo do exercício será estimar uma versão da Curva IS do Modelo Semiestrutural de Pequeno Porte do BCB descrito nesse <span class="co">[</span><span class="ot">Relatório</span><span class="co">](https://www.bcb.gov.br/htms/relinf/port/2017/06/ri201706b7p.pdf)</span>, conforme descrito abaixo:</span>
+<span id="cb30-14"><a href="#cb30-14"></a></span>
+<span id="cb30-15"><a href="#cb30-15"></a>\begin{align}</span>
+<span id="cb30-16"><a href="#cb30-16"></a>h_t = \beta_0 + \sum_{i&gt;0} \beta_{1i} h_{t-1} + \sum_{j&gt;0} \beta_{2j} r_{t-j} +\sum_{k &gt; 0} \beta_{3k} \Delta sup_{t-k} + u_t</span>
+<span id="cb30-17"><a href="#cb30-17"></a>\end{align}</span>
+<span id="cb30-18"><a href="#cb30-18"></a></span>
+<span id="cb30-19"><a href="#cb30-19"></a>Basicamente, a Curva IS estimada irá descrever a dinâmica do hiato do produto com base em **suas próprias defasagens**, da **taxa de juros real ex-ante** e da **variação do superávit primário**.</span>
+<span id="cb30-20"><a href="#cb30-20"></a></span>
+<span id="cb30-21"><a href="#cb30-21"></a><span class="fu">## Dados</span></span>
+<span id="cb30-22"><a href="#cb30-22"></a>O Hiato do produto é aquele construído pelo Banco Central, disponibilizado nos anexos estatísticos do Relatório de Inflação.</span>
+<span id="cb30-23"><a href="#cb30-23"></a></span>
+<span id="cb30-24"><a href="#cb30-24"></a>O hiato do juros é criado pela diferença entre o juros real ex-ante e o juro neutro, a taxa de juros real obtida pela taxa de juros nominal swap pré-DI de 360 dias deflacionada pela expectativa de inflação relativa ao período de vigência do contrato, o juro de equilíbrio segue uma&nbsp;proxy&nbsp;definida no Relatório de Inflação de dezembro de 2019, dada pela Selic esperada para t+3 deflacionada pela inflação espera para t+3.</span>
+<span id="cb30-25"><a href="#cb30-25"></a></span>
+<span id="cb30-26"><a href="#cb30-26"></a>A variação do superávit primário utilizada é aquela proveniente do resultado fiscal estrutural construído pela SPE.</span>
+<span id="cb30-27"><a href="#cb30-27"></a></span>
+<span id="cb30-28"><a href="#cb30-28"></a><span class="fu">## Como estimamos a curva IS?</span></span>
+<span id="cb30-29"><a href="#cb30-29"></a></span>
+<span id="cb30-30"><a href="#cb30-30"></a>A Curva IS é estimada com base na equação descrita no início usando 2SLS com matriz de covariância robusta para evitar problemas na inferência dos parâmetros causados por autocorrelação e heterocedasticidade nos resíduos. Há também a adição de duas dummies para levar em consideração a crise de 2008 e a pandemia de Covid.</span>
+<span id="cb30-31"><a href="#cb30-31"></a></span>
+<span id="cb30-34"><a href="#cb30-34"></a><span class="in">```{python}</span></span>
+<span id="cb30-35"><a href="#cb30-35"></a><span class="im">from</span> plotnine <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb30-36"><a href="#cb30-36"></a><span class="im">from</span> bcb <span class="im">import</span> sgs <span class="co"># Importar dados do SGS</span></span>
+<span id="cb30-37"><a href="#cb30-37"></a><span class="im">from</span> bcb <span class="im">import</span> Expectativas <span class="co"># Importar dados de Expectativas</span></span>
+<span id="cb30-38"><a href="#cb30-38"></a><span class="im">import</span> ipeadatapy <span class="im">as</span> ip <span class="co"># importa dados do IPEADATA</span></span>
+<span id="cb30-39"><a href="#cb30-39"></a><span class="im">import</span> pandas <span class="im">as</span> pd <span class="co"># Manipulação de dados</span></span>
+<span id="cb30-40"><a href="#cb30-40"></a><span class="im">import</span> numpy <span class="im">as</span> np <span class="co"># Manipulação e cálculo de dados</span></span>
+<span id="cb30-41"><a href="#cb30-41"></a><span class="im">from</span> functools <span class="im">import</span> <span class="bu">reduce</span> <span class="co"># módulo para juntar dfs</span></span>
+<span id="cb30-42"><a href="#cb30-42"></a><span class="im">from</span> datetime <span class="im">import</span> datetime <span class="co"># módulo para trabalhar com data</span></span>
+<span id="cb30-43"><a href="#cb30-43"></a><span class="im">from</span> linearmodels.iv <span class="im">import</span> IV2SLS <span class="co"># Modelo IV2SLS</span></span>
+<span id="cb30-44"><a href="#cb30-44"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb30-45"><a href="#cb30-45"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb30-46"><a href="#cb30-46"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb30-47"><a href="#cb30-47"></a>sns.<span class="bu">set</span>()</span>
+<span id="cb30-48"><a href="#cb30-48"></a><span class="in">```</span></span>
+<span id="cb30-49"><a href="#cb30-49"></a></span>
+<span id="cb30-50"><a href="#cb30-50"></a><span class="fu">## 2.1 Hiato do Produto</span></span>
+<span id="cb30-51"><a href="#cb30-51"></a></span>
+<span id="cb30-54"><a href="#cb30-54"></a><span class="in">```{python}</span></span>
+<span id="cb30-55"><a href="#cb30-55"></a><span class="co"># Coleta e tratamento do Hiato do Produto da IFI</span></span>
+<span id="cb30-56"><a href="#cb30-56"></a>hiato <span class="op">=</span> (</span>
+<span id="cb30-57"><a href="#cb30-57"></a>    pd.read_excel(</span>
+<span id="cb30-58"><a href="#cb30-58"></a>    <span class="st">"https://www12.senado.leg.br/ifi/dados/arquivos/estimativas-do-hiato-do-produto-ifi/@@download/file/Hiato</span><span class="sc">%20d</span><span class="st">o%20Produto%20IFI.xlsx"</span>,</span>
+<span id="cb30-59"><a href="#cb30-59"></a>    sheet_name <span class="op">=</span> <span class="st">"Hiato do Produto"</span>,</span>
+<span id="cb30-60"><a href="#cb30-60"></a>    skiprows <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb30-61"><a href="#cb30-61"></a>    )</span>
+<span id="cb30-62"><a href="#cb30-62"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'Trim-Ano'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>),</span>
+<span id="cb30-63"><a href="#cb30-63"></a>            hiato_ifi <span class="op">=</span> <span class="kw">lambda</span> x: x.Hiato.astype(<span class="bu">float</span>) <span class="op">*</span> <span class="dv">100</span>)</span>
+<span id="cb30-64"><a href="#cb30-64"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'hiato_ifi'</span>]]</span>
+<span id="cb30-65"><a href="#cb30-65"></a>  )</span>
+<span id="cb30-66"><a href="#cb30-66"></a><span class="in">```</span></span>
+<span id="cb30-67"><a href="#cb30-67"></a></span>
+<span id="cb30-70"><a href="#cb30-70"></a><span class="in">```{python}</span></span>
+<span id="cb30-71"><a href="#cb30-71"></a>hiato</span>
+<span id="cb30-72"><a href="#cb30-72"></a><span class="in">```</span></span>
+<span id="cb30-73"><a href="#cb30-73"></a></span>
+<span id="cb30-76"><a href="#cb30-76"></a><span class="in">```{python}</span></span>
+<span id="cb30-77"><a href="#cb30-77"></a><span class="co"># Coleta e tratamento do Hiato do Produto do BC</span></span>
+<span id="cb30-78"><a href="#cb30-78"></a>hiato_bcb <span class="op">=</span> (</span>
+<span id="cb30-79"><a href="#cb30-79"></a>    pd.read_excel(</span>
+<span id="cb30-80"><a href="#cb30-80"></a>    <span class="st">"https://www.bcb.gov.br/content/ri/relatorioinflacao/202403/ri202403anp.xlsx"</span>,</span>
+<span id="cb30-81"><a href="#cb30-81"></a>    sheet_name <span class="op">=</span> <span class="st">"Graf 2.2.4"</span>,</span>
+<span id="cb30-82"><a href="#cb30-82"></a>    skiprows <span class="op">=</span> <span class="dv">8</span></span>
+<span id="cb30-83"><a href="#cb30-83"></a>    )</span>
+<span id="cb30-84"><a href="#cb30-84"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'Trimestre'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>),</span>
+<span id="cb30-85"><a href="#cb30-85"></a>            hiato_bcb <span class="op">=</span> <span class="kw">lambda</span> x: x.Hiato.astype(<span class="bu">float</span>))</span>
+<span id="cb30-86"><a href="#cb30-86"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'hiato_bcb'</span>]]</span>
+<span id="cb30-87"><a href="#cb30-87"></a>  )</span>
+<span id="cb30-88"><a href="#cb30-88"></a></span>
+<span id="cb30-89"><a href="#cb30-89"></a>hiato_bcb</span>
+<span id="cb30-90"><a href="#cb30-90"></a><span class="in">```</span></span>
+<span id="cb30-91"><a href="#cb30-91"></a></span>
+<span id="cb30-92"><a href="#cb30-92"></a><span class="fu">## 2.2 Resultado estrutural do setor público</span></span>
+<span id="cb30-93"><a href="#cb30-93"></a></span>
+<span id="cb30-96"><a href="#cb30-96"></a><span class="in">```{python}</span></span>
+<span id="cb30-97"><a href="#cb30-97"></a><span class="co"># Coleta e tratamento do resultado estrutural do setor público</span></span>
+<span id="cb30-98"><a href="#cb30-98"></a>sup <span class="op">=</span> (</span>
+<span id="cb30-99"><a href="#cb30-99"></a>     pd.read_excel(</span>
+<span id="cb30-100"><a href="#cb30-100"></a>    <span class="st">"https://www.gov.br/fazenda/pt-br/assuntos/politica-fiscal/atuacao-spe/resultado-fiscal-estrutural/tabelas-de-dados/series-historicas-rfe-2023-2022-versao-final.xlsx"</span>,</span>
+<span id="cb30-101"><a href="#cb30-101"></a>    sheet_name <span class="op">=</span> <span class="st">"RFE - Trimestral"</span>,</span>
+<span id="cb30-102"><a href="#cb30-102"></a>    skiprows <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb30-103"><a href="#cb30-103"></a>    )</span>
+<span id="cb30-104"><a href="#cb30-104"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(</span>
+<span id="cb30-105"><a href="#cb30-105"></a>            x[<span class="st">'Acum. 4 Trimestres'</span>].<span class="bu">str</span>.slice_replace(start <span class="op">=</span> <span class="dv">4</span>, stop <span class="op">=</span> <span class="dv">5</span>, repl <span class="op">=</span> <span class="st">"-Q"</span>),  freq <span class="op">=</span> <span class="st">'Q'</span></span>
+<span id="cb30-106"><a href="#cb30-106"></a>            ),</span>
+<span id="cb30-107"><a href="#cb30-107"></a>          sup <span class="op">=</span> <span class="kw">lambda</span> x: (((x[<span class="st">'Resultado Estrutural.2'</span>].astype(<span class="bu">float</span>) <span class="op">+</span> <span class="dv">1</span>) <span class="op">**</span> (<span class="dv">1</span><span class="op">/</span><span class="dv">4</span>)) <span class="op">-</span> <span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb30-108"><a href="#cb30-108"></a>    )</span>
+<span id="cb30-109"><a href="#cb30-109"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'sup'</span>]]</span>
+<span id="cb30-110"><a href="#cb30-110"></a>  )</span>
+<span id="cb30-111"><a href="#cb30-111"></a><span class="in">```</span></span>
+<span id="cb30-112"><a href="#cb30-112"></a></span>
+<span id="cb30-115"><a href="#cb30-115"></a><span class="in">```{python}</span></span>
+<span id="cb30-116"><a href="#cb30-116"></a>sup</span>
+<span id="cb30-117"><a href="#cb30-117"></a><span class="in">```</span></span>
+<span id="cb30-118"><a href="#cb30-118"></a></span>
+<span id="cb30-119"><a href="#cb30-119"></a><span class="fu">## 2.3 Juro Real</span></span>
+<span id="cb30-120"><a href="#cb30-120"></a></span>
+<span id="cb30-123"><a href="#cb30-123"></a><span class="in">```{python}</span></span>
+<span id="cb30-124"><a href="#cb30-124"></a><span class="co"># Cria uma função para a equação de fisher</span></span>
+<span id="cb30-125"><a href="#cb30-125"></a><span class="kw">def</span> fisher(juros, inflacao):</span>
+<span id="cb30-126"><a href="#cb30-126"></a>    <span class="co">"""</span></span>
+<span id="cb30-127"><a href="#cb30-127"></a><span class="co">    Calcula a taxa de juros real neutra usando a equação de Fisher.</span></span>
+<span id="cb30-128"><a href="#cb30-128"></a></span>
+<span id="cb30-129"><a href="#cb30-129"></a><span class="co">    Args:</span></span>
+<span id="cb30-130"><a href="#cb30-130"></a><span class="co">        juros (float): A taxa de juros nominal em porcentagem (%).</span></span>
+<span id="cb30-131"><a href="#cb30-131"></a><span class="co">        inflacao (float): A taxa de inflação em porcentagem (%).</span></span>
+<span id="cb30-132"><a href="#cb30-132"></a></span>
+<span id="cb30-133"><a href="#cb30-133"></a><span class="co">    Returns:</span></span>
+<span id="cb30-134"><a href="#cb30-134"></a><span class="co">        float: A taxa de juros real em porcentagem (%).</span></span>
+<span id="cb30-135"><a href="#cb30-135"></a></span>
+<span id="cb30-136"><a href="#cb30-136"></a><span class="co">    Raises:</span></span>
+<span id="cb30-137"><a href="#cb30-137"></a><span class="co">        TypeError: Se os argumentos `juros` e `inflacao` não forem do tipo `float`.</span></span>
+<span id="cb30-138"><a href="#cb30-138"></a></span>
+<span id="cb30-139"><a href="#cb30-139"></a><span class="co">    Exemplo:</span></span>
+<span id="cb30-140"><a href="#cb30-140"></a><span class="co">        &gt;&gt;&gt; fisher(10, 3)</span></span>
+<span id="cb30-141"><a href="#cb30-141"></a><span class="co">        6.796116504854364</span></span>
+<span id="cb30-142"><a href="#cb30-142"></a><span class="co">    """</span></span>
+<span id="cb30-143"><a href="#cb30-143"></a>    juros <span class="op">=</span> ((((<span class="dv">1</span> <span class="op">+</span> (juros <span class="op">/</span> <span class="dv">100</span>)) <span class="op">/</span> (<span class="dv">1</span> <span class="op">+</span> inflacao <span class="op">/</span> <span class="dv">100</span>))) <span class="op">-</span><span class="dv">1</span>) <span class="op">*</span> <span class="dv">100</span></span>
+<span id="cb30-144"><a href="#cb30-144"></a>    <span class="cf">return</span> juros</span>
+<span id="cb30-145"><a href="#cb30-145"></a><span class="in">```</span></span>
+<span id="cb30-146"><a href="#cb30-146"></a></span>
+<span id="cb30-149"><a href="#cb30-149"></a><span class="in">```{python}</span></span>
+<span id="cb30-150"><a href="#cb30-150"></a><span class="co"># Taxa referencial - swaps - DI pré-360 dias - média do período (IPEADATA/B3)</span></span>
+<span id="cb30-151"><a href="#cb30-151"></a>swaps <span class="op">=</span> (</span>
+<span id="cb30-152"><a href="#cb30-152"></a>    ip.timeseries(<span class="st">'BMF12_SWAPDI36012'</span>)</span>
+<span id="cb30-153"><a href="#cb30-153"></a>    .rename(columns <span class="op">=</span> {<span class="st">'VALUE ((% a.a.))'</span> : <span class="st">'swaps'</span>})[[<span class="st">'swaps'</span>]]</span>
+<span id="cb30-154"><a href="#cb30-154"></a>  )</span>
+<span id="cb30-155"><a href="#cb30-155"></a></span>
+<span id="cb30-156"><a href="#cb30-156"></a><span class="co"># Muda a coluna de data para o índice</span></span>
+<span id="cb30-157"><a href="#cb30-157"></a>swaps <span class="op">=</span> swaps.set_index(swaps.index.to_period(<span class="st">'M'</span>))</span>
+<span id="cb30-158"><a href="#cb30-158"></a></span>
+<span id="cb30-159"><a href="#cb30-159"></a>swaps</span>
+<span id="cb30-160"><a href="#cb30-160"></a><span class="in">```</span></span>
+<span id="cb30-161"><a href="#cb30-161"></a></span>
+<span id="cb30-164"><a href="#cb30-164"></a><span class="in">```{python}</span></span>
+<span id="cb30-165"><a href="#cb30-165"></a><span class="co"># Instância a classe de Expectativas</span></span>
+<span id="cb30-166"><a href="#cb30-166"></a>em <span class="op">=</span> Expectativas()</span>
+<span id="cb30-167"><a href="#cb30-167"></a></span>
+<span id="cb30-168"><a href="#cb30-168"></a><span class="co"># Obtém o endpoint da Expectativa de Inflação Acumulada em 12 meses</span></span>
+<span id="cb30-169"><a href="#cb30-169"></a>exp_ipca_raw <span class="op">=</span> em.get_endpoint(<span class="st">'ExpectativasMercadoInflacao12Meses'</span>)</span>
+<span id="cb30-170"><a href="#cb30-170"></a></span>
+<span id="cb30-171"><a href="#cb30-171"></a><span class="co"># Expectativa média do IPCA - tx. acumulada para os próximos 12 meses (Expectativas)</span></span>
+<span id="cb30-172"><a href="#cb30-172"></a>ipca_expec_12m_raw <span class="op">=</span> (</span>
+<span id="cb30-173"><a href="#cb30-173"></a>    exp_ipca_raw.query()</span>
+<span id="cb30-174"><a href="#cb30-174"></a>    .<span class="bu">filter</span>(exp_ipca_raw.Suavizada <span class="op">==</span> <span class="st">'S'</span>,</span>
+<span id="cb30-175"><a href="#cb30-175"></a>            exp_ipca_raw.baseCalculo <span class="op">==</span> <span class="dv">0</span>,</span>
+<span id="cb30-176"><a href="#cb30-176"></a>            exp_ipca_raw.Indicador <span class="op">==</span> <span class="st">'IPCA'</span>)</span>
+<span id="cb30-177"><a href="#cb30-177"></a>    .collect()</span>
+<span id="cb30-178"><a href="#cb30-178"></a>    )</span>
+<span id="cb30-179"><a href="#cb30-179"></a><span class="in">```</span></span>
+<span id="cb30-180"><a href="#cb30-180"></a></span>
+<span id="cb30-183"><a href="#cb30-183"></a><span class="in">```{python}</span></span>
+<span id="cb30-184"><a href="#cb30-184"></a><span class="co"># Muda a classe da coluna de data para date time e period, renomeia as colunas e seleciona a coluna dos valores</span></span>
+<span id="cb30-185"><a href="#cb30-185"></a>ipca_expec_12m <span class="op">=</span> (</span>
+<span id="cb30-186"><a href="#cb30-186"></a>    ipca_expec_12m_raw</span>
+<span id="cb30-187"><a href="#cb30-187"></a>    <span class="co"># altera o tipo da coluna de data para datetime</span></span>
+<span id="cb30-188"><a href="#cb30-188"></a>    .set_index(pd.to_datetime(ipca_expec_12m_raw[<span class="st">'Data'</span>])</span>
+<span id="cb30-189"><a href="#cb30-189"></a>    <span class="co"># altera o tipo da coluna para period</span></span>
+<span id="cb30-190"><a href="#cb30-190"></a>    .dt.to_period(<span class="st">'D'</span>))</span>
+<span id="cb30-191"><a href="#cb30-191"></a>    .resample(<span class="st">'M'</span>)</span>
+<span id="cb30-192"><a href="#cb30-192"></a>    .agg({<span class="st">'Mediana'</span>:<span class="st">'mean'</span>})</span>
+<span id="cb30-193"><a href="#cb30-193"></a>    .rename(columns <span class="op">=</span> {<span class="st">'Mediana'</span> : <span class="st">'ipca_exp_12m'</span>})</span>
+<span id="cb30-194"><a href="#cb30-194"></a>    .loc[:, [<span class="st">'ipca_exp_12m'</span>]]</span>
+<span id="cb30-195"><a href="#cb30-195"></a>  )</span>
+<span id="cb30-196"><a href="#cb30-196"></a><span class="in">```</span></span>
+<span id="cb30-197"><a href="#cb30-197"></a></span>
+<span id="cb30-200"><a href="#cb30-200"></a><span class="in">```{python}</span></span>
+<span id="cb30-201"><a href="#cb30-201"></a>ipca_expec_12m</span>
+<span id="cb30-202"><a href="#cb30-202"></a><span class="in">```</span></span>
+<span id="cb30-203"><a href="#cb30-203"></a></span>
+<span id="cb30-206"><a href="#cb30-206"></a><span class="in">```{python}</span></span>
+<span id="cb30-207"><a href="#cb30-207"></a><span class="co"># Junta o df do swap e expectativas do ipca</span></span>
+<span id="cb30-208"><a href="#cb30-208"></a>ex_ante <span class="op">=</span> ipca_expec_12m.join(swaps)</span>
+<span id="cb30-209"><a href="#cb30-209"></a></span>
+<span id="cb30-210"><a href="#cb30-210"></a><span class="co"># Calcula o juro real ex-ante</span></span>
+<span id="cb30-211"><a href="#cb30-211"></a>ex_ante <span class="op">=</span> ex_ante.assign(juro_real <span class="op">=</span> <span class="kw">lambda</span> x: fisher(x.swaps, x.ipca_exp_12m))</span>
+<span id="cb30-212"><a href="#cb30-212"></a></span>
+<span id="cb30-213"><a href="#cb30-213"></a><span class="co"># Trimestraliza o juro real</span></span>
+<span id="cb30-214"><a href="#cb30-214"></a>juro_real <span class="op">=</span>  (</span>
+<span id="cb30-215"><a href="#cb30-215"></a>     ex_ante</span>
+<span id="cb30-216"><a href="#cb30-216"></a>    .assign(date <span class="op">=</span> <span class="kw">lambda</span> x: x.index.to_timestamp(),</span>
+<span id="cb30-217"><a href="#cb30-217"></a>            date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'date'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
+<span id="cb30-218"><a href="#cb30-218"></a>    .reset_index()</span>
+<span id="cb30-219"><a href="#cb30-219"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'juro_real'</span>]]</span>
+<span id="cb30-220"><a href="#cb30-220"></a>    .groupby(by <span class="op">=</span> <span class="st">'date_quarter'</span>)</span>
+<span id="cb30-221"><a href="#cb30-221"></a>    .agg(juro_real_ex_ante <span class="op">=</span> (<span class="st">'juro_real'</span>, <span class="st">'mean'</span>))</span>
+<span id="cb30-222"><a href="#cb30-222"></a>    .reset_index()</span>
+<span id="cb30-223"><a href="#cb30-223"></a>    )</span>
+<span id="cb30-224"><a href="#cb30-224"></a><span class="in">```</span></span>
+<span id="cb30-225"><a href="#cb30-225"></a></span>
+<span id="cb30-226"><a href="#cb30-226"></a><span class="fu">## 2.4 Proxy juro neutro</span></span>
+<span id="cb30-227"><a href="#cb30-227"></a></span>
+<span id="cb30-230"><a href="#cb30-230"></a><span class="in">```{python}</span></span>
+<span id="cb30-231"><a href="#cb30-231"></a><span class="co"># Cria função para calcular a data de referência a partir da data de observação</span></span>
+<span id="cb30-232"><a href="#cb30-232"></a><span class="kw">def</span> reference_date(date: <span class="bu">str</span>):</span>
+<span id="cb30-233"><a href="#cb30-233"></a>    <span class="co">"""</span></span>
+<span id="cb30-234"><a href="#cb30-234"></a><span class="co">    Calcula a data de referência adicionando 3 anos a uma data de observação.</span></span>
+<span id="cb30-235"><a href="#cb30-235"></a></span>
+<span id="cb30-236"><a href="#cb30-236"></a><span class="co">    Args:</span></span>
+<span id="cb30-237"><a href="#cb30-237"></a><span class="co">        date (str): Uma string que representa uma data no formato 'YYYY-MM-DD'.</span></span>
+<span id="cb30-238"><a href="#cb30-238"></a></span>
+<span id="cb30-239"><a href="#cb30-239"></a><span class="co">    Returns:</span></span>
+<span id="cb30-240"><a href="#cb30-240"></a><span class="co">        List[str]: Uma lista de strings com a data de referência no formato 'YYYY'.</span></span>
+<span id="cb30-241"><a href="#cb30-241"></a></span>
+<span id="cb30-242"><a href="#cb30-242"></a><span class="co">    Raises:</span></span>
+<span id="cb30-243"><a href="#cb30-243"></a><span class="co">        TypeError: Se o argumento `date` não for uma string.</span></span>
+<span id="cb30-244"><a href="#cb30-244"></a></span>
+<span id="cb30-245"><a href="#cb30-245"></a><span class="co">    Examples:</span></span>
+<span id="cb30-246"><a href="#cb30-246"></a><span class="co">        &gt;&gt;&gt; reference_date('2022-01-01')</span></span>
+<span id="cb30-247"><a href="#cb30-247"></a><span class="co">        ['2025']</span></span>
+<span id="cb30-248"><a href="#cb30-248"></a><span class="co">    """</span></span>
+<span id="cb30-249"><a href="#cb30-249"></a>    years <span class="op">=</span> pd.DatetimeIndex(date).year.values <span class="op">+</span> <span class="dv">3</span> <span class="co"># Calcula 3 anos a frente</span></span>
+<span id="cb30-250"><a href="#cb30-250"></a>    years <span class="op">=</span> years.tolist()</span>
+<span id="cb30-251"><a href="#cb30-251"></a>    years <span class="op">=</span> [<span class="bu">str</span>(i) <span class="cf">for</span> i <span class="kw">in</span> years]</span>
+<span id="cb30-252"><a href="#cb30-252"></a>    <span class="cf">return</span> years</span>
+<span id="cb30-253"><a href="#cb30-253"></a><span class="in">```</span></span>
+<span id="cb30-254"><a href="#cb30-254"></a></span>
+<span id="cb30-257"><a href="#cb30-257"></a><span class="in">```{python}</span></span>
+<span id="cb30-258"><a href="#cb30-258"></a><span class="co"># Conecta com a API das Expectativas de Mercado Anuais</span></span>
+<span id="cb30-259"><a href="#cb30-259"></a>exp_anual <span class="op">=</span> em.get_endpoint(<span class="st">'ExpectativasMercadoAnuais'</span>)</span>
+<span id="cb30-260"><a href="#cb30-260"></a></span>
+<span id="cb30-261"><a href="#cb30-261"></a><span class="co"># Importa as expectativas do IPCA anuais e realiza os filtros</span></span>
+<span id="cb30-262"><a href="#cb30-262"></a>ipca_e_t3_raw <span class="op">=</span> (</span>
+<span id="cb30-263"><a href="#cb30-263"></a>  exp_anual.query()</span>
+<span id="cb30-264"><a href="#cb30-264"></a>  .<span class="bu">filter</span>(exp_anual.Indicador <span class="op">==</span> <span class="st">"IPCA"</span>)</span>
+<span id="cb30-265"><a href="#cb30-265"></a>  .<span class="bu">filter</span>(exp_anual.baseCalculo <span class="op">==</span> <span class="dv">0</span>)</span>
+<span id="cb30-266"><a href="#cb30-266"></a>  .select(exp_anual.Data, exp_anual.Mediana, exp_anual.DataReferencia)</span>
+<span id="cb30-267"><a href="#cb30-267"></a>  .collect()</span>
+<span id="cb30-268"><a href="#cb30-268"></a>  )</span>
+<span id="cb30-269"><a href="#cb30-269"></a><span class="in">```</span></span>
+<span id="cb30-270"><a href="#cb30-270"></a></span>
+<span id="cb30-273"><a href="#cb30-273"></a><span class="in">```{python}</span></span>
+<span id="cb30-274"><a href="#cb30-274"></a><span class="co"># Realiza o filtro para a data de referência 3 anos a frente das obs.</span></span>
+<span id="cb30-275"><a href="#cb30-275"></a>ipca_e_t3 <span class="op">=</span> ipca_e_t3_raw[(</span>
+<span id="cb30-276"><a href="#cb30-276"></a>          ipca_e_t3_raw</span>
+<span id="cb30-277"><a href="#cb30-277"></a>          .DataReferencia <span class="op">==</span> reference_date(ipca_e_t3_raw[<span class="st">'Data'</span>])</span>
+<span id="cb30-278"><a href="#cb30-278"></a>          )</span>
+<span id="cb30-279"><a href="#cb30-279"></a>            ]</span>
+<span id="cb30-280"><a href="#cb30-280"></a></span>
+<span id="cb30-281"><a href="#cb30-281"></a><span class="co"># Renomeia as colunas</span></span>
+<span id="cb30-282"><a href="#cb30-282"></a>ipca_e_t3 <span class="op">=</span> ipca_e_t3.rename(columns <span class="op">=</span> {<span class="st">'Data'</span> : <span class="st">'date'</span>,</span>
+<span id="cb30-283"><a href="#cb30-283"></a>                                  <span class="st">'Mediana'</span> : <span class="st">'ipca_e'</span>}).drop([<span class="st">'DataReferencia'</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span>
+<span id="cb30-284"><a href="#cb30-284"></a><span class="in">```</span></span>
+<span id="cb30-285"><a href="#cb30-285"></a></span>
+<span id="cb30-288"><a href="#cb30-288"></a><span class="in">```{python}</span></span>
+<span id="cb30-289"><a href="#cb30-289"></a><span class="co"># Importa as expectativas da Selic anuais e realiza os filtros</span></span>
+<span id="cb30-290"><a href="#cb30-290"></a>selic_e_t3_raw <span class="op">=</span> (</span>
+<span id="cb30-291"><a href="#cb30-291"></a>   exp_anual.query()</span>
+<span id="cb30-292"><a href="#cb30-292"></a>  .<span class="bu">filter</span>(exp_anual.Indicador <span class="op">==</span> <span class="st">"Selic"</span>)</span>
+<span id="cb30-293"><a href="#cb30-293"></a>  .<span class="bu">filter</span>(exp_anual.baseCalculo <span class="op">==</span> <span class="dv">0</span>)</span>
+<span id="cb30-294"><a href="#cb30-294"></a>  .select(exp_anual.Data, exp_anual.Mediana, exp_anual.DataReferencia)</span>
+<span id="cb30-295"><a href="#cb30-295"></a>  .collect()</span>
+<span id="cb30-296"><a href="#cb30-296"></a>  )</span>
+<span id="cb30-297"><a href="#cb30-297"></a></span>
+<span id="cb30-298"><a href="#cb30-298"></a><span class="co"># Realiza o filtro para a data de referência 3 anos a frente das obs.</span></span>
+<span id="cb30-299"><a href="#cb30-299"></a>selic_e_t3 <span class="op">=</span> selic_e_t3_raw[(</span>
+<span id="cb30-300"><a href="#cb30-300"></a>    selic_e_t3_raw</span>
+<span id="cb30-301"><a href="#cb30-301"></a>    .DataReferencia <span class="op">==</span> reference_date(selic_e_t3_raw[<span class="st">'Data'</span>])</span>
+<span id="cb30-302"><a href="#cb30-302"></a>    )</span>
+<span id="cb30-303"><a href="#cb30-303"></a>      ]</span>
+<span id="cb30-304"><a href="#cb30-304"></a></span>
+<span id="cb30-305"><a href="#cb30-305"></a><span class="co"># Renomeia as colunas</span></span>
+<span id="cb30-306"><a href="#cb30-306"></a>selic_e_t3 <span class="op">=</span> selic_e_t3.rename(columns <span class="op">=</span> {<span class="st">'Data'</span> : <span class="st">'date'</span>,</span>
+<span id="cb30-307"><a href="#cb30-307"></a>                                         <span class="st">'Mediana'</span> : <span class="st">'selic_e'</span>}).drop([<span class="st">'DataReferencia'</span>], axis <span class="op">=</span> <span class="dv">1</span>)</span>
+<span id="cb30-308"><a href="#cb30-308"></a><span class="in">```</span></span>
+<span id="cb30-309"><a href="#cb30-309"></a></span>
+<span id="cb30-312"><a href="#cb30-312"></a><span class="in">```{python}</span></span>
+<span id="cb30-313"><a href="#cb30-313"></a>selic_e_t3</span>
+<span id="cb30-314"><a href="#cb30-314"></a><span class="in">```</span></span>
+<span id="cb30-315"><a href="#cb30-315"></a></span>
+<span id="cb30-318"><a href="#cb30-318"></a><span class="in">```{python}</span></span>
+<span id="cb30-319"><a href="#cb30-319"></a><span class="co"># Junta os dados em um data frame</span></span>
+<span id="cb30-320"><a href="#cb30-320"></a>proxy_neutro_m <span class="op">=</span> (</span>
+<span id="cb30-321"><a href="#cb30-321"></a>                pd.merge(left <span class="op">=</span> ipca_e_t3,</span>
+<span id="cb30-322"><a href="#cb30-322"></a>                        right <span class="op">=</span> selic_e_t3,</span>
+<span id="cb30-323"><a href="#cb30-323"></a>                        how <span class="op">=</span> <span class="st">'inner'</span>,</span>
+<span id="cb30-324"><a href="#cb30-324"></a>                        on <span class="op">=</span> <span class="st">'date'</span>)</span>
+<span id="cb30-325"><a href="#cb30-325"></a>                .assign(neutro <span class="op">=</span> <span class="kw">lambda</span> x : fisher(x.selic_e, x.ipca_e))</span>
+<span id="cb30-326"><a href="#cb30-326"></a>                )</span>
+<span id="cb30-327"><a href="#cb30-327"></a><span class="in">```</span></span>
+<span id="cb30-328"><a href="#cb30-328"></a></span>
+<span id="cb30-331"><a href="#cb30-331"></a><span class="in">```{python}</span></span>
+<span id="cb30-332"><a href="#cb30-332"></a><span class="co"># Trimestraliza o juro neutro</span></span>
+<span id="cb30-333"><a href="#cb30-333"></a>proxy_neutro <span class="op">=</span> (</span>
+<span id="cb30-334"><a href="#cb30-334"></a>    proxy_neutro_m</span>
+<span id="cb30-335"><a href="#cb30-335"></a>    .assign(date_quarter <span class="op">=</span> <span class="kw">lambda</span> x: pd.PeriodIndex(x[<span class="st">'date'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
+<span id="cb30-336"><a href="#cb30-336"></a>    .loc[:, [<span class="st">'date_quarter'</span>, <span class="st">'neutro'</span>]]</span>
+<span id="cb30-337"><a href="#cb30-337"></a>    .groupby(by <span class="op">=</span> <span class="st">'date_quarter'</span>)</span>
+<span id="cb30-338"><a href="#cb30-338"></a>    .agg(neutro <span class="op">=</span> (<span class="st">'neutro'</span>, <span class="st">'mean'</span>))</span>
+<span id="cb30-339"><a href="#cb30-339"></a>    .reset_index()</span>
+<span id="cb30-340"><a href="#cb30-340"></a>)</span>
+<span id="cb30-341"><a href="#cb30-341"></a></span>
+<span id="cb30-342"><a href="#cb30-342"></a>proxy_neutro</span>
+<span id="cb30-343"><a href="#cb30-343"></a><span class="in">```</span></span>
+<span id="cb30-344"><a href="#cb30-344"></a></span>
+<span id="cb30-345"><a href="#cb30-345"></a><span class="fu"># Resultados</span></span>
+<span id="cb30-346"><a href="#cb30-346"></a></span>
+<span id="cb30-349"><a href="#cb30-349"></a><span class="in">```{python}</span></span>
+<span id="cb30-350"><a href="#cb30-350"></a><span class="co"># lista de dataframes</span></span>
+<span id="cb30-351"><a href="#cb30-351"></a>dfs <span class="op">=</span> [hiato, hiato_bcb, sup, juro_real, proxy_neutro]</span>
+<span id="cb30-352"><a href="#cb30-352"></a></span>
+<span id="cb30-353"><a href="#cb30-353"></a><span class="co"># reduz os dataframes pela chave 'date_quarter' com left join</span></span>
+<span id="cb30-354"><a href="#cb30-354"></a>dados_reg <span class="op">=</span> <span class="bu">reduce</span>(<span class="kw">lambda</span> left, right: pd.merge(left, right, on <span class="op">=</span> <span class="st">'date_quarter'</span>, how <span class="op">=</span> <span class="st">'left'</span>), dfs).dropna()</span>
+<span id="cb30-355"><a href="#cb30-355"></a><span class="in">```</span></span>
+<span id="cb30-356"><a href="#cb30-356"></a></span>
+<span id="cb30-359"><a href="#cb30-359"></a><span class="in">```{python}</span></span>
+<span id="cb30-360"><a href="#cb30-360"></a>dados_reg</span>
+<span id="cb30-361"><a href="#cb30-361"></a><span class="in">```</span></span>
+<span id="cb30-362"><a href="#cb30-362"></a></span>
+<span id="cb30-365"><a href="#cb30-365"></a><span class="in">```{python}</span></span>
+<span id="cb30-366"><a href="#cb30-366"></a><span class="co"># Calcula as defasagens</span></span>
+<span id="cb30-367"><a href="#cb30-367"></a>dados_reg[<span class="st">'hiato_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">1</span>)</span>
+<span id="cb30-368"><a href="#cb30-368"></a>dados_reg[<span class="st">'hiato_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">2</span>)</span>
+<span id="cb30-369"><a href="#cb30-369"></a>dados_reg[<span class="st">'sup_diff'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup'</span>].diff()</span>
+<span id="cb30-370"><a href="#cb30-370"></a>dados_reg[<span class="st">'sup_diff_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup_diff'</span>].shift(<span class="dv">1</span>)</span>
+<span id="cb30-371"><a href="#cb30-371"></a>dados_reg[<span class="st">'sup_diff_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup_diff'</span>].shift(<span class="dv">2</span>)</span>
+<span id="cb30-372"><a href="#cb30-372"></a>dados_reg[<span class="st">'sup_diff_lag3'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup_diff'</span>].shift(<span class="dv">3</span>)</span>
+<span id="cb30-373"><a href="#cb30-373"></a>dados_reg[<span class="st">'juro_real_ex_ante_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'juro_real_ex_ante'</span>].shift(<span class="dv">1</span>)</span>
+<span id="cb30-374"><a href="#cb30-374"></a>dados_reg[<span class="st">'juro_real_ex_ante_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'juro_real_ex_ante'</span>].shift(<span class="dv">2</span>)</span>
+<span id="cb30-375"><a href="#cb30-375"></a>dados_reg[<span class="st">'neutro_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'neutro'</span>].shift(<span class="dv">1</span>)</span>
+<span id="cb30-376"><a href="#cb30-376"></a>dados_reg[<span class="st">'neutro_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'neutro'</span>].shift(<span class="dv">2</span>)</span>
+<span id="cb30-377"><a href="#cb30-377"></a>dados_reg[<span class="st">'hiato_juros'</span>] <span class="op">=</span> dados_reg.juro_real_ex_ante <span class="op">-</span> dados_reg.neutro</span>
+<span id="cb30-378"><a href="#cb30-378"></a>dados_reg[<span class="st">'hiato_juros_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_juros'</span>].shift(<span class="dv">1</span>)</span>
+<span id="cb30-379"><a href="#cb30-379"></a>dados_reg[<span class="st">'hiato_juros_lag2'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_juros'</span>].shift(<span class="dv">2</span>)</span>
+<span id="cb30-380"><a href="#cb30-380"></a>dados_reg[<span class="st">'hiato_lag3'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">3</span>)</span>
+<span id="cb30-381"><a href="#cb30-381"></a>dados_reg[<span class="st">'hiato_lag4'</span>] <span class="op">=</span> dados_reg[<span class="st">'hiato_bcb'</span>].shift(<span class="dv">4</span>)</span>
+<span id="cb30-382"><a href="#cb30-382"></a>dados_reg[<span class="st">'sup_lag1'</span>] <span class="op">=</span> dados_reg[<span class="st">'sup'</span>].shift(<span class="dv">1</span>)</span>
+<span id="cb30-383"><a href="#cb30-383"></a></span>
+<span id="cb30-384"><a href="#cb30-384"></a><span class="co"># Criar variáveis dummy trimestrais usando pd.get_dummies</span></span>
+<span id="cb30-385"><a href="#cb30-385"></a>t_dummies <span class="op">=</span> pd.get_dummies(dados_reg[<span class="st">'date_quarter'</span>].dt.quarter, prefix <span class="op">=</span> <span class="st">'trimestre'</span>, dtype <span class="op">=</span> <span class="bu">int</span>)</span>
+<span id="cb30-386"><a href="#cb30-386"></a>dados_reg[<span class="st">'d_subprime'</span>] <span class="op">=</span> dados_reg[<span class="st">'date_quarter'</span>].isin(pd.PeriodIndex([<span class="st">'2008Q4'</span>, <span class="st">"2009Q1"</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
+<span id="cb30-387"><a href="#cb30-387"></a>dados_reg[<span class="st">'d_covid'</span>] <span class="op">=</span> dados_reg[<span class="st">'date_quarter'</span>].isin(pd.PeriodIndex([<span class="st">'2020Q2'</span>], freq <span class="op">=</span> <span class="st">'Q'</span>))</span>
+<span id="cb30-388"><a href="#cb30-388"></a></span>
+<span id="cb30-389"><a href="#cb30-389"></a><span class="co"># Concatenar as variáveis dummy com o DataFrame original</span></span>
+<span id="cb30-390"><a href="#cb30-390"></a>dados_reg <span class="op">=</span> pd.concat([dados_reg, t_dummies], axis<span class="op">=</span><span class="dv">1</span>).dropna()</span>
+<span id="cb30-391"><a href="#cb30-391"></a><span class="in">```</span></span>
+<span id="cb30-392"><a href="#cb30-392"></a></span>
+<span id="cb30-395"><a href="#cb30-395"></a><span class="in">```{python}</span></span>
+<span id="cb30-396"><a href="#cb30-396"></a><span class="co"># Retira os dados faltantes</span></span>
+<span id="cb30-397"><a href="#cb30-397"></a>dados_reg.dropna(inplace <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb30-398"><a href="#cb30-398"></a><span class="in">```</span></span>
+<span id="cb30-399"><a href="#cb30-399"></a></span>
+<span id="cb30-402"><a href="#cb30-402"></a><span class="in">```{python}</span></span>
+<span id="cb30-403"><a href="#cb30-403"></a><span class="co"># Estimando o modelo 2SLS usando a função IV2SLS.from_formula</span></span>
+<span id="cb30-404"><a href="#cb30-404"></a>model <span class="op">=</span> IV2SLS.from_formula(<span class="st">'hiato_bcb ~ 1 + d_subprime + d_covid + [hiato_lag1 + hiato_juros_lag1 + sup_diff_lag1 ~ hiato_lag1 + juro_real_ex_ante_lag1 + neutro_lag2 + sup_diff_lag1]'</span>,</span>
+<span id="cb30-405"><a href="#cb30-405"></a>                            data <span class="op">=</span> dados_reg).fit(cov_type<span class="op">=</span><span class="st">'kernel'</span>)</span>
+<span id="cb30-406"><a href="#cb30-406"></a></span>
+<span id="cb30-407"><a href="#cb30-407"></a><span class="co"># Imprimindo o sumário do modelo</span></span>
+<span id="cb30-408"><a href="#cb30-408"></a><span class="bu">print</span>(model.summary)</span>
+<span id="cb30-409"><a href="#cb30-409"></a><span class="in">```</span></span>
+<span id="cb30-410"><a href="#cb30-410"></a></span>
+<span id="cb30-413"><a href="#cb30-413"></a><span class="in">```{python}</span></span>
+<span id="cb30-414"><a href="#cb30-414"></a><span class="co"># Cria df com o resultado</span></span>
+<span id="cb30-415"><a href="#cb30-415"></a>resultado <span class="op">=</span> pd.DataFrame({<span class="st">'Ajuste'</span> : model.fitted_values.fitted_values,</span>
+<span id="cb30-416"><a href="#cb30-416"></a>                          <span class="st">'Resíduo'</span> : model.resids,</span>
+<span id="cb30-417"><a href="#cb30-417"></a>                          <span class="st">'Hiato'</span> : dados_reg.hiato_bcb.values,</span>
+<span id="cb30-418"><a href="#cb30-418"></a>                          <span class="st">'Data'</span> : dados_reg.date_quarter.dt.to_timestamp(),</span>
+<span id="cb30-419"><a href="#cb30-419"></a>                          <span class="st">"Hiato Defasado"</span>: model.params.hiato_lag1 <span class="op">*</span> dados_reg.hiato_lag1,</span>
+<span id="cb30-420"><a href="#cb30-420"></a>                          <span class="st">"Hiato do Juros Defasado"</span>: model.params.hiato_juros_lag1 <span class="op">*</span> dados_reg.hiato_juros_lag1,</span>
+<span id="cb30-421"><a href="#cb30-421"></a>                          <span class="st">"Diff. Superávit"</span>: model.params.sup_diff_lag1 <span class="op">*</span> dados_reg.sup_diff_lag1})</span>
+<span id="cb30-422"><a href="#cb30-422"></a><span class="in">```</span></span>
+<span id="cb30-423"><a href="#cb30-423"></a></span>
+<span id="cb30-426"><a href="#cb30-426"></a><span class="in">```{python}</span></span>
+<span id="cb30-427"><a href="#cb30-427"></a><span class="co"># Altera para long</span></span>
+<span id="cb30-428"><a href="#cb30-428"></a>resultado_fit_long <span class="op">=</span> resultado[[<span class="st">'Data'</span>, <span class="st">'Ajuste'</span>, <span class="st">'Hiato'</span>]].melt(id_vars <span class="op">=</span> [<span class="st">'Data'</span>])</span>
+<span id="cb30-429"><a href="#cb30-429"></a></span>
+<span id="cb30-430"><a href="#cb30-430"></a><span class="co"># Criação do gráfico</span></span>
+<span id="cb30-431"><a href="#cb30-431"></a>(</span>
+<span id="cb30-432"><a href="#cb30-432"></a>  ggplot(resultado_fit_long, aes(x <span class="op">=</span> <span class="st">'Data'</span>, y <span class="op">=</span> <span class="st">'value'</span>, color <span class="op">=</span> <span class="st">'variable'</span>)) <span class="op">+</span></span>
+<span id="cb30-433"><a href="#cb30-433"></a>  geom_line(size <span class="op">=</span>  <span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb30-434"><a href="#cb30-434"></a>  theme_minimal() <span class="op">+</span></span>
+<span id="cb30-435"><a href="#cb30-435"></a>  scale_color_manual(values <span class="op">=</span> [<span class="st">'#b22200'</span>, <span class="st">'#282f6b'</span>]) <span class="op">+</span></span>
+<span id="cb30-436"><a href="#cb30-436"></a>  scale_x_datetime(date_breaks <span class="op">=</span> <span class="st">'2 years'</span>, date_labels <span class="op">=</span> <span class="st">"%Y"</span>) <span class="op">+</span></span>
+<span id="cb30-437"><a href="#cb30-437"></a>  labs(</span>
+<span id="cb30-438"><a href="#cb30-438"></a>    title <span class="op">=</span> <span class="st">'Ajuste da Curva IS estimada x Hiato do Produto (BCB)'</span>,</span>
+<span id="cb30-439"><a href="#cb30-439"></a>    x <span class="op">=</span> <span class="st">''</span>,</span>
+<span id="cb30-440"><a href="#cb30-440"></a>    y <span class="op">=</span> <span class="st">''</span>,</span>
+<span id="cb30-441"><a href="#cb30-441"></a>    color <span class="op">=</span> <span class="st">""</span>,</span>
+<span id="cb30-442"><a href="#cb30-442"></a>    caption <span class="op">=</span> <span class="st">'Elaborado por analisemacro.com.br | Fonte: BCB'</span>)<span class="op">+</span></span>
+<span id="cb30-443"><a href="#cb30-443"></a>  theme(legend_position <span class="op">=</span> <span class="st">'bottom'</span>,</span>
+<span id="cb30-444"><a href="#cb30-444"></a>        figure_size <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb30-445"><a href="#cb30-445"></a>  )</span>
+<span id="cb30-446"><a href="#cb30-446"></a><span class="in">```</span></span>
+<span id="cb30-447"><a href="#cb30-447"></a></span>
+<span id="cb30-450"><a href="#cb30-450"></a><span class="in">```{python}</span></span>
+<span id="cb30-451"><a href="#cb30-451"></a><span class="co"># Cria uma figura com 1 linha e 3 colunas para os três gráficos</span></span>
+<span id="cb30-452"><a href="#cb30-452"></a>fig, axes <span class="op">=</span> plt.subplots(nrows<span class="op">=</span><span class="dv">1</span>, ncols<span class="op">=</span><span class="dv">3</span>, figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">4</span>))</span>
+<span id="cb30-453"><a href="#cb30-453"></a></span>
+<span id="cb30-454"><a href="#cb30-454"></a><span class="co"># Gráfico de Linha do Resíduo</span></span>
+<span id="cb30-455"><a href="#cb30-455"></a>axes[<span class="dv">0</span>].plot(resultado.Resíduo)</span>
+<span id="cb30-456"><a href="#cb30-456"></a>axes[<span class="dv">0</span>].set_title(<span class="st">'Gráfico de Linha do Resíduo'</span>)</span>
+<span id="cb30-457"><a href="#cb30-457"></a>axes[<span class="dv">0</span>].set_xlabel(<span class="st">'Tempo'</span>)</span>
+<span id="cb30-458"><a href="#cb30-458"></a>axes[<span class="dv">0</span>].set_ylabel(<span class="st">'Resíduo'</span>)</span>
+<span id="cb30-459"><a href="#cb30-459"></a></span>
+<span id="cb30-460"><a href="#cb30-460"></a><span class="co"># Gráfico de Autocorrelação (ACF)</span></span>
+<span id="cb30-461"><a href="#cb30-461"></a>sm.graphics.tsa.plot_acf(resultado.Resíduo, lags<span class="op">=</span><span class="dv">40</span>, ax<span class="op">=</span>axes[<span class="dv">1</span>], zero <span class="op">=</span> <span class="va">False</span>)</span>
+<span id="cb30-462"><a href="#cb30-462"></a>axes[<span class="dv">1</span>].set_title(<span class="st">'Gráfico de Autocorrelação (ACF) dos Resíduos'</span>)</span>
+<span id="cb30-463"><a href="#cb30-463"></a>axes[<span class="dv">1</span>].set_xlabel(<span class="st">'Lags'</span>)</span>
+<span id="cb30-464"><a href="#cb30-464"></a>axes[<span class="dv">1</span>].set_ylabel(<span class="st">'Autocorrelação'</span>)</span>
+<span id="cb30-465"><a href="#cb30-465"></a></span>
+<span id="cb30-466"><a href="#cb30-466"></a><span class="co"># Gráfico de Histograma</span></span>
+<span id="cb30-467"><a href="#cb30-467"></a>axes[<span class="dv">2</span>].hist(resultado.Resíduo, bins<span class="op">=</span><span class="dv">20</span>, edgecolor<span class="op">=</span><span class="st">'k'</span>)</span>
+<span id="cb30-468"><a href="#cb30-468"></a>axes[<span class="dv">2</span>].set_title(<span class="st">'Histograma dos Resíduos'</span>)</span>
+<span id="cb30-469"><a href="#cb30-469"></a>axes[<span class="dv">2</span>].set_xlabel(<span class="st">'Resíduo'</span>)</span>
+<span id="cb30-470"><a href="#cb30-470"></a>axes[<span class="dv">2</span>].set_ylabel(<span class="st">'Frequência'</span>)</span>
+<span id="cb30-471"><a href="#cb30-471"></a></span>
+<span id="cb30-472"><a href="#cb30-472"></a>plt.tight_layout()  <span class="co"># Para garantir que os gráficos não se sobreponham</span></span>
+<span id="cb30-473"><a href="#cb30-473"></a>plt.show()</span>
+<span id="cb30-474"><a href="#cb30-474"></a><span class="in">```</span></span>
+<span id="cb30-475"><a href="#cb30-475"></a></span>
+<span id="cb30-478"><a href="#cb30-478"></a><span class="in">```{python}</span></span>
+<span id="cb30-479"><a href="#cb30-479"></a>resultado_fit_plot_long <span class="op">=</span> resultado[[<span class="st">'Data'</span>, <span class="st">'Hiato Defasado'</span>, <span class="st">'Hiato do Juros Defasado'</span>, <span class="st">'Diff. Superávit'</span>, <span class="st">'Resíduo'</span>]].melt(id_vars <span class="op">=</span> [<span class="st">'Data'</span>])</span>
+<span id="cb30-480"><a href="#cb30-480"></a></span>
+<span id="cb30-481"><a href="#cb30-481"></a>(</span>
+<span id="cb30-482"><a href="#cb30-482"></a> ggplot(resultado_fit_plot_long, aes(x <span class="op">=</span> <span class="st">'Data'</span>, y <span class="op">=</span> <span class="st">'value'</span>, fill <span class="op">=</span> <span class="st">'variable'</span>))<span class="op">+</span></span>
+<span id="cb30-483"><a href="#cb30-483"></a> geom_col() <span class="op">+</span></span>
+<span id="cb30-484"><a href="#cb30-484"></a> geom_hline(yintercept <span class="op">=</span> <span class="dv">0</span>, colour <span class="op">=</span> <span class="st">'black'</span>) <span class="op">+</span></span>
+<span id="cb30-485"><a href="#cb30-485"></a> theme_minimal() <span class="op">+</span></span>
+<span id="cb30-486"><a href="#cb30-486"></a> scale_fill_manual(values <span class="op">=</span> [<span class="st">'black'</span>, <span class="st">'#224f20'</span>, <span class="st">'#b22200'</span>, <span class="st">'#eace3f'</span>]) <span class="op">+</span></span>
+<span id="cb30-487"><a href="#cb30-487"></a> scale_x_datetime(date_breaks <span class="op">=</span> <span class="st">'2 years'</span>, date_labels <span class="op">=</span> <span class="st">"%Y"</span>) <span class="op">+</span></span>
+<span id="cb30-488"><a href="#cb30-488"></a> labs(</span>
+<span id="cb30-489"><a href="#cb30-489"></a>    title <span class="op">=</span> <span class="st">'Contribuição para o Hiato do Produto'</span>,</span>
+<span id="cb30-490"><a href="#cb30-490"></a>    x <span class="op">=</span> <span class="st">''</span>,</span>
+<span id="cb30-491"><a href="#cb30-491"></a>    y <span class="op">=</span> <span class="st">'p.p.'</span>,</span>
+<span id="cb30-492"><a href="#cb30-492"></a>    fill <span class="op">=</span> <span class="st">""</span>,</span>
+<span id="cb30-493"><a href="#cb30-493"></a>    caption <span class="op">=</span> <span class="st">'Elaborado por analisemacro.com.br | Fonte: BCB'</span>)<span class="op">+</span></span>
+<span id="cb30-494"><a href="#cb30-494"></a>  theme(legend_position <span class="op">=</span> <span class="st">'top'</span>,</span>
+<span id="cb30-495"><a href="#cb30-495"></a>        figure_size <span class="op">=</span> (<span class="dv">10</span>, <span class="dv">7</span>))</span>
+<span id="cb30-496"><a href="#cb30-496"></a>)</span>
+<span id="cb30-497"><a href="#cb30-497"></a><span class="in">```</span></span>
 </code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>Licensed under {{&lt; fa brands creative-commons &gt;}} {{&lt; fa brands creative-commons-by &gt;}} {{&lt; fa brands creative-commons-sa &gt;}} <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
-</div>   
-    <div class="nav-footer-center">
-<p>Made with&nbsp;<a href="https://quarto.org/">Quarto</a></p>
-</div>
-    <div class="nav-footer-right">
-<p>View the source at <a href="?var:github-repo">{{&lt; fa brands github &gt;}} GitHub</a></p>
-</div>
-  </div>
-</footer>
 
 
 

@@ -25,7 +25,6 @@ website:
         icon: github
       - href: "mailto:luiz_rique-@hotmail.com"
         icon: envelope-fill
-    background: primary
     search: true
     border: true
     background: dark
@@ -35,7 +34,7 @@ website:
   open-graph: true
 
 lang: pt
-freeze: false
+freeze: true
 
 format:
   html:
